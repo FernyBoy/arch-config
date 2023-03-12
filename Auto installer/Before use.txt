@@ -1,0 +1,1 @@
+Debes darle permisos de ejecución mediante el comando chmod +x autoInstall.sh
