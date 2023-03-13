@@ -17,12 +17,12 @@ while read line; do
 			    paquete=$(echo "$line" | awk '{print $1}')
 			        # Intentamos instalar el paquete utilizando pacman o yay según corresponda
 				    if [[ $paquete == *"-bin" ]]; then
-					          if ! yay -S "$paquete"; then
+					          if ! yay -S "$paquete" --noconfirm; then
 							          # Si yay no puede instalar el paquete, lo guardamos en el archivo temporal
 								          echo "$paquete" >> "$paquetes_no_instalados"
 									        fi
 										    else
-											          if ! pacman -S "$paquete"; then
+											          if ! sudo pacman -S "$paquete" --noconfirm; then
 													          # Si pacman no puede instalar el paquete, lo guardamos en el archivo temporal
 														          echo "$paquete" >> "$paquetes_no_instalados"
 															        fi
