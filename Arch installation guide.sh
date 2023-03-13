@@ -94,6 +94,48 @@ sudo cp ./mirrorlist /etc/pacman.d/mirrorlist
 sudo pacman -S xorg xorg-server qtile lightdm lightdm-gtk-greeter
 sudo systemctl enable lightdm
 
+# Instala YAY
+
+# Entra a "arch-config"
+cd 'Auto installer'
+chmod +x autoInstall.sh
+bash autoInstall.sh ../Programs\ list/Programs.txt
+
+# Entra a la carpeta "Themes - Icons"
+# En: /Cursor
+tar -xf Nordic-cursors.tar.xz
+sudo mv Nordic-cursors /usr/share/icons
+# En: /Icons
+unzip BlackoutIcons.zip
+sudo mv BlackoutIcons /usr/share/icons
+# En: /Theme
+tar -xf Fluent-round-dark.tar.xz
+sudo mv Fluent-round-dark /usr/share/themes
+# En: /Fonts
+unzip JetBrainsMono.zip
+sudo mv ./*.ttf /usr/share/fonts/TTF/
+mkdir ~/.local/share/fonts
+cp Monocraft.otf ~/.local/share/fonts/
+# Realiza todos los cambios necesarios utilizando "lxappearance"
+
+# Entra a la carpeta "Alacritty"
+mkdir ~/.config/alacritty
+cp alacritty.yml ~/.config/alacritty/
+
+# Entra a la carpeta "Background"
+mkdir ~/Images/Walls
+cp 'Dark arch.png' ~/Images/Walls
+
+# Entra a la carpeta "Bash config"
+cp .bashrc ~/
+
+# Entra a la carpeta "Grub"
+Extract argon-grub-theme-3.2.2.tar.gz
+mkdir ~/Docs/grub-config
+mv argon-grub-theme-3.2.2 ~/Docs/grub-config
+cd ~/Docs/grub-config/
+sudo ./install.sh --install --resolution 1920x1080 --background ./backgrounds/1080p/grey.png --fontsize 32
+
 # Instalación de YAY
 cd /opt
 sudo git clone https://aur.archlinux.org/yay-git.git

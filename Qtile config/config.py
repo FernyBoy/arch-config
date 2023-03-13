@@ -146,7 +146,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font='UbuntuMono Nerd Font',
+    font='JetBrainsMono Nerd Font',
     fontsize=12,
     padding=3,
 )
