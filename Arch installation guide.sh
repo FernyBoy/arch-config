@@ -12,7 +12,7 @@ timedatectl set-ntp true
 
 # Crear y formatear particiones (comandos usados en mi caso)
 
-cfdisk
+lsblk
 mkfs.ext4 /dev/sda5
 mkfs.ext4 /dev/sda6
 mkswap /dev/sda7
