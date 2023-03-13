@@ -1,27 +1,27 @@
 # Conexión Inalámbrica
 
-loadkeys es
+loadkeys en
 iwctl
 device list
-station NOMBRE_DISPOSITIVO scan  # El nombre sale del comando anterior
-station NOMBRE_DISPOSITIVO get-networks
-station NOMBRE_DISPOSITIVO connect NOMBRE_ROUTER
+station <NOMBRE_DISPOSITIVO> scan
+station <NOMBRE_DISPOSITIVO> get-networks
+station <NOMBRE_DISPOSITIVO> connect <NOMBRE_ROUTER>
 exit
 ping archlinux.org
 timedatectl set-ntp true
 
-# Crear y formatear particiones (comandos usados en mi caso)
+# Crear y formatear particiones
 
 lsblk
-mkfs.ext4 /dev/sda5
-mkfs.ext4 /dev/sda6
-mkswap /dev/sda7
-swapon /dev/sda7
-mount /dev/sda5 /mnt
+mkfs.ext4 /dev/<particion_raiz>
+mkfs.ext4 /dev/<particion_secundaria>
+mkswap /dev/<particion_swap>
+swapon /dev/<particion_swap>
+mount /dev/<particion_raiz> /mnt
 mkdir /mnt/home
-mount /dev/sda6 /mnt/home
+mount /dev/<particion_secundaria> /mnt/home
 mkdir /mnt/boot
-mount /dev/sda2 /mnt/boot
+mount /dev/<particion_efi> /mnt/boot
 
 # Instalar sistema
 
@@ -33,18 +33,21 @@ genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
 ln -sf /usr/share/zoneinfo/America/Phoenix /etc/localtime
 hwclock --systohc
-pacman -S nano
-nano /etc/locale.gen  # Buscar en_US.UTF-8 UTF-8 y es_ES.UTF-8 UTF-8
+pacman -S vim
+vim /etc/locale.gen  # Buscar en_US.UTF-8 UTF-8 y es_ES.UTF-8 UTF-8
 locale-gen
-echo "LANG=es_ES.UTF-8" > /etc/locale.conf
-echo "KEYMAP=es" > /etc/vconsole.conf
-echo "asus" > /etc/hostname
-nano /etc/hosts
+echo "LANG=en_US.UTF-8" > /etc/locale.conf
+echo "KEYMAP=en" > /etc/vconsole.conf
+echo "<nombre_host>" > /etc/hostname
+vim /etc/hosts
+
+# Escribir en el archivo hosts
 {
     127.0.0.1   localhost
     ::1         localhost
     127.0.1.1   FernyLinux.localhost FernyLinux
 }
+
 passwd
 pacman -S networkmanager
 systemctl enable NetworkManager
@@ -56,14 +59,17 @@ pacman -S os-prober
     Descomentar: GRUB_DISABLE_OS_PROBER=false
 }
 grub-mkconfig -o /boot/grub/grub.cfg
-useradd -m usuario
-passwd usuario
-usermod -aG wheel,audio,video,storage usuario
+os-prober
+update-grub
+useradd -m <usuario>
+passwd <usuario>
+usermod -aG wheel,audio,video,storage <usuario>
 pacman -S sudo
-nano /etc/sudoers
+vim /etc/sudoers
 exit
 umount -R /mnt
 shutdown now
+
 # Sacar USB y arrancar PC
 
 # Instalar Entorno de Escritorio KDE-Plasma
