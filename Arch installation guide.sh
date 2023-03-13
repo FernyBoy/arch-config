@@ -52,7 +52,7 @@ passwd
 pacman -S networkmanager
 systemctl enable NetworkManager
 pacman -S grub efibootmgr
-grub-install --target=x86_64-efi --efi-directory=/boot
+grub-install --target=x86_64-efi --efi-directory=/mnt/boot
 pacman -S os-prober
 
 # En el archivo /etc/default/grub descomenta:
