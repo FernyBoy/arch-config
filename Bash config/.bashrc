@@ -23,6 +23,9 @@ alias Installed="pacman -Qe"
 alias AllInstalled="pacman -Q"
 alias Install="sudo pacman -S"
 alias Uninstall="sudo pacman -R"
+alias DeleteSignatures="sudo rm -r /etc/pacman.d/gnupg"
+alias UpdateKeys="sudo pacman-key --init; sudo pacman-key --populate archlinux"
+alias SystemUpdate="sudo pacman -Sy; sudo pacman -Syu"
 
 # Qtile System Emergency
 alias QtileEmergency='cd .config/qtile/ ; mv config.py my_config.py ; mv default_config.py config.py'
@@ -45,10 +48,12 @@ alias gta="git add"
 alias gtc="git commit -am"
 alias gtl="git log"
 alias gtlone="git log --oneline"
+alias gtg="git log --graph"
 alias gts="git status"
 alias gtps="git push"
 alias gtpl="git pull"
 alias gtb="git branch"
+alias gtbdlt="git branch -d"
 alias gtcheck="git checkout"
 alias gtchecknb="git checkout -b"
 alias gtr="git remote"
@@ -58,6 +63,7 @@ alias gtrs="git remote show"
 alias gtrmv="git remote rename"
 alias gtrst="git reset"
 alias gtrsthd="git reset --hard"
+alias gtm="git merge"
 alias AddSSH="eval '$(ssh-agent -s)' && ssh-add ~/.ssh/id_rsa"
 
 
@@ -84,3 +90,5 @@ alias Trash="trash"
 # PS1="\u \[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] $ "
 
 PS1='\[\033[01;34m\]﫢\u \[\033[01;35m\]${PWD#${PWD%/*/*/*}/}\[\033[01;31m\]$(parse_git_branch)\[\033[00m\] \n '
+
+PATH=~/.console-ninja/.bin:$PATH
