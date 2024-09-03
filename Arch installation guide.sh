@@ -6,6 +6,33 @@ device list
 station <NOMBRE_DISPOSITIVO> scan
 station <NOMBRE_DISPOSITIVO> get-networks
 station <NOMBRE_DISPOSITIVO> connect <NOMBRE_ROUTER>
+
+########## En caso de ser una red privada ########## Los ejemplos utilizados son para la red de la Unison
+# Crear en la carpeta /etc/iwd el archivo main.conf
+cd /etc/iwd
+vim main.conf
+# Escribir 
+[General]
+EnableNetworkConfiguration=true
+##########
+
+# Crear en la carpeta /var/lib/iwd el archivo <Nombre de la red>.<Tipo de seguridad>
+cd /var/lib/iwd
+vim <nombre de la red>.<tipo de seguridad> (UniSon.8021x)
+# Escribir 
+[Security]
+EAP-Method=<Metodo>(PEAP)
+EAP-Identity=<user>
+EAP-Password=<password>
+CACert=/etc/ssl/certs/ca-certificates.crt
+EAP-PEAP-Phase2-Method=<Metodo> (MSCHAPV2)
+
+[Settings]
+AutoConnect=true
+##########
+
+##########################################
+
 exit
 ping archlinux.org
 timedatectl set-ntp true
