@@ -159,9 +159,15 @@ cp 'Dark arch.png' ~/Images/Walls
 # Entra a la carpeta "Bash config"
 cp .bashrc ~/
 
+# Entra a la carpeta XProfile
+cp .xprofile ~/
+
+# Cambia el nombre y el orden de windows en el archivo /boot/grub/grub.cfg
+vim /boot/grub/grub.cfg
+
 # Entra a la carpeta "Grub"
 Extract argon-grub-theme-3.2.2.tar.gz
 mkdir ~/Docs/grub-config
 mv argon-grub-theme-3.2.2 ~/Docs/grub-config
 cd ~/Docs/grub-config/
-sudo ./install.sh --install --resolution 1920x1080 --background ./backgrounds/1080p/grey.png --fontsize 32
+sudo ./install.sh --install --resolution 1920x1080 --background Night --fontsize 32
