@@ -112,7 +112,7 @@ keys = [
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
 ]
 
-groups = [Group(i) for i in [" Web", " Dev", " Src", " Code", " Work", " Shell"]]
+groups = [Group(i) for i in ["󰜫 Web", " Dev", " Src", " Code", " Work", " Shell"]]
 
 for i, group in enumerate(groups):
     actual_key = str(i + 1)
@@ -160,7 +160,7 @@ screens = [
                 widget.GroupBox(
                     foreground=['#FFFFFF', '#FFFFFF'],
                     background=['#202020', '#202020'],
-                    font='UbuntuMono Nerd Font',
+                    font='JetBraindMonoNerdFont',
                     fontsize=15,
                     margin_y=2,
                     margin_x=5,
@@ -182,7 +182,7 @@ screens = [
                 widget.TextBox(
                     fontsize=15,
                     padding=15,
-                    text="הּ"),
+                    text="󰘵"),
                 # widget.Prompt(),
                 widget.WindowName(
                     fontsize=15,
@@ -193,7 +193,7 @@ screens = [
                     fontsize=14,
                     background=['#202020', '#202020'],
                     padding=15,
-                    format=" %d / %m / %Y  﩮 %A   %I:%M %p"
+                    format=" %d / %m / %Y  󰕯 %A   %I:%M %p"
                 ),
             ],
             25,

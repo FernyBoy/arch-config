@@ -1,0 +1,12 @@
+[cursor.style]
+shape = "Beam"
+
+[window]
+opacity = 0.8
+
+[window.padding]
+x = 10
+y = 10
+
+[font]
+normal = { family = "JetBrainsMonoNerdFont", style = "regular" }

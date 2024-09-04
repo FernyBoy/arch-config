@@ -6,15 +6,17 @@
 [[ $- != *i* ]] && return
 
 parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ \1/'
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ 󰊢 \1/'
 }
+
+Start SSH agent
 
 # Navigation
 alias ls='ls --color=auto'
 alias c='clear'
 alias l='ls -alh'
 alias Home='cd ~'
-alias Bash='vim .bashrc'
+alias Bash='vim ~/.bashrc'
 alias edge="microsoft-edge-dev &"
 alias Qconfig="vim ~/.config/qtile/config.py"
 
@@ -89,6 +91,6 @@ alias Trash="trash"
 #PS1='\u \W\$(git_branch)\$ '
 # PS1="\u \[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] $ "
 
-PS1='\[\033[01;34m\]﫢\u \[\033[01;35m\]${PWD#${PWD%/*/*/*}/}\[\033[01;31m\]$(parse_git_branch)\[\033[00m\] \n '
+PS1='\[\033[01;34m\] \u \[\033[01;35m\] ${PWD#${PWD%/*/*/*}/}\[\033[01;31m\]$(parse_git_branch)\[\033[00m\] \n '
 
 PATH=~/.console-ninja/.bin:$PATH
