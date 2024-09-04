@@ -142,8 +142,7 @@ sudo mv BlackoutIcons /usr/share/icons
 tar -xf Fluent-round-dark.tar.xz
 sudo mv Fluent-round-dark /usr/share/themes
 # En: /Fonts
-unzip JetBrainsMono.zip
-sudo mv ./*.ttf /usr/share/fonts/TTF/
+sudo cp ./*.ttf /usr/share/fonts/
 mkdir ~/.local/share/fonts
 cp Monocraft.otf ~/.local/share/fonts/
 # Realiza todos los cambios necesarios utilizando "lxappearance"
