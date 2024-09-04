@@ -143,8 +143,7 @@ tar -xf Fluent-round-dark.tar.xz
 sudo mv Fluent-round-dark /usr/share/themes
 # En: /Fonts
 sudo cp ./*.ttf /usr/share/fonts/
-mkdir ~/.local/share/fonts
-cp Monocraft.otf ~/.local/share/fonts/
+sudo cp ./*.otf /usr/share/fonts/
 # Realiza todos los cambios necesarios utilizando "lxappearance"
 
 # Entra a la carpeta "Alacritty"
