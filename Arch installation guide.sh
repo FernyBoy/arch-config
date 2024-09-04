@@ -45,8 +45,6 @@ mkfs.ext4 /dev/<particion_secundaria>
 mkswap /dev/<particion_swap>
 swapon /dev/<particion_swap>
 mount /dev/<particion_raiz> /mnt
-mkdir /mnt/home
-mount /dev/<particion_secundaria> /mnt/home
 mount --mkdir /dev/<particion_efi> /mnt/boot
 
 # Instalar sistema
