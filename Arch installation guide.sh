@@ -118,7 +118,13 @@ sudo cp ./mirrorlist /etc/pacman.d/mirrorlist
 sudo pacman -S xorg xorg-server qtile lightdm lightdm-gtk-greeter
 sudo systemctl enable lightdm
 
-# Instala YAY
+# Instalación de YAY
+cd /opt
+sudo git clone https://aur.archlinux.org/yay-git.git
+sudo chown -R <user>:<user> ./yay-git
+cd yay-git
+sudo pacman -S --needed git base-devel
+makepkg -si
 
 # Entra a "arch-config"
 cd 'Auto installer'
@@ -159,11 +165,3 @@ mkdir ~/Docs/grub-config
 mv argon-grub-theme-3.2.2 ~/Docs/grub-config
 cd ~/Docs/grub-config/
 sudo ./install.sh --install --resolution 1920x1080 --background ./backgrounds/1080p/grey.png --fontsize 32
-
-# Instalación de YAY
-cd /opt
-sudo git clone https://aur.archlinux.org/yay-git.git
-sudo chown -R <user>:<user> ./yay-git
-cd yay-git
-sudo pacman -S --needed git base-devel
-makepkg -si
