@@ -47,8 +47,7 @@ swapon /dev/<particion_swap>
 mount /dev/<particion_raiz> /mnt
 mkdir /mnt/home
 mount /dev/<particion_secundaria> /mnt/home
-mkdir /mnt/boot
-mount /dev/<particion_efi> /mnt/boot
+mount --mkdir /dev/<particion_efi> /mnt/boot
 
 # Instalar sistema
 
@@ -61,7 +60,7 @@ arch-chroot /mnt
 ln -sf /usr/share/zoneinfo/America/Phoenix /etc/localtime
 hwclock --systohc
 pacman -S vim
-vim /etc/locale.gen  # Buscar en_US.UTF-8 UTF-8 y es_ES.UTF-8 UTF-8
+vim /etc/locale.gen  # Buscar en_US.UTF-8 UTF-8 y es_MX.UTF-8 UTF-8
 locale-gen
 echo "LANG=en_US.UTF-8" > /etc/locale.conf
 echo "KEYMAP=en" > /etc/vconsole.conf
@@ -83,7 +82,7 @@ grub-install --target=x86_64-efi --efi-directory=/mnt/boot
 pacman -S os-prober
 
 # En el archivo /etc/default/grub descomenta:
-"#GRUB_DISABLE_OS_PROBER=false"
+"GRUB_DISABLE_OS_PROBER=false"
 
 grub-mkconfig -o /boot/grub/grub.cfg
 os-prober
@@ -106,7 +105,7 @@ shutdown now
 # Sacar USB y arrancar PC
 
 # Conectarse a una red wifi con NetworkManager
-nmcli devide wifi list
+nmcli device wifi list
 sudo nmcli device wifi connect <nombre_red> password <password>
 ping archlinux.org
 
