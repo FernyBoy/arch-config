@@ -168,4 +168,4 @@ Extract argon-grub-theme-3.2.2.tar.gz
 mkdir ~/Docs/grub-config
 mv argon-grub-theme-3.2.2 ~/Docs/grub-config
 cd ~/Docs/grub-config/
-sudo ./install.sh --install --resolution 1920x1080 --background Night --fontsize 32
+sudo ./install.sh --install --resolution 1920x1080 --background Night --fontsize 16
