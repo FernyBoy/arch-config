@@ -41,6 +41,7 @@ alias EDW="cd Docs/Learning/Platzi/Desarrollo\ e\ ingenieria/Escuela\ de\ desarr
 # Time
 alias Time="sudo timedatectl set-time "
 alias Date="sudo timedatectl set-date "
+alias AutoAdjustTime="sudo timedatectl set-ntp true"
 
 # Git
 alias gti="git init"
