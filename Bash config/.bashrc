@@ -15,7 +15,6 @@ alias c='clear'
 alias l='ls -alh'
 alias Home='cd ~'
 alias Bash='vim ~/.bashrc'
-alias edge="microsoft-edge-dev &"
 alias Qconfig="vim ~/.config/qtile/config.py"
 
 # Pacman
@@ -33,6 +32,7 @@ alias EmergencyEnd='cd .config/qtile/ ; mv config.py default_config.py ; mv my_c
 alias CopyConfig="cp config.py last_config.py"
 
 # Updates
+alias UpdateYay="makepkg -si /opt/yay-git"
 alias UpdateCode="yay -S visual-studio-code-bin"
 alias UpdateEdge="yay -S microsoft-edge-dev-bin"
 
@@ -86,6 +86,19 @@ alias Extract="tar -zxvf"
 alias EmptyTrash="trash-empty"
 alias RestoreSingleFile="trash-restore"
 alias Trash="trash"
+
+# Screen
+alias Screen120="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 120"
+alias Screen240="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 240"
+alias Screen480="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 480"
+
+# Programs
+alias Edge="microsoft-edge-dev &"
+alias Netbeans="~/Programs/Netbeans/ProgramFiles/bin/netbeans &"
+
+# JetBrains
+alias IntelliJ="~/Programs/JetBrains/IntelliJ/ProgramFiles/bin/idea &"
+
 
 #PS1='\u \W\$(git_branch)\$ '
 # PS1="\u \[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] $ "
