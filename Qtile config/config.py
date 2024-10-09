@@ -84,8 +84,8 @@ keys = [
     Key([mod], "c", lazy.spawn("code")),
 
     # Rofi
-    Key([mod], "m", lazy.spawn("rofi -show run")),
-    Key([mod, "shift"], "m", lazy.spawn("rofi -show")),
+    Key([mod], "m", lazy.spawn("rofi -show-icons -show drun")),
+    Key([mod, "shift"], "m", lazy.spawn("rofi -show-icons -show run")),
 
     # Pantallas
     Key([mod, "shift"], "p", lazy.spawn("arandr")),
@@ -112,7 +112,7 @@ keys = [
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
 ]
 
-groups = [Group(i) for i in ["󰜫 Web", " Dev", " Src", " Code", " Work", " Shell"]]
+groups = [Group(i) for i in ["󰜫 Web", " Dev", "  Src", " Code", " Work", " Shell"]]
 
 for i, group in enumerate(groups):
     actual_key = str(i + 1)
