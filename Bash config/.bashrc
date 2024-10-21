@@ -21,7 +21,7 @@ alias Qconfig="vim ~/.config/qtile/config.py"
 alias Installed="pacman -Qe"
 alias AllInstalled="pacman -Q"
 alias Install="sudo pacman -S"
-alias Uninstall="sudo pacman -R"
+alias Uninstall="sudo pacman -Rns"
 alias DeleteSignatures="sudo rm -r /etc/pacman.d/gnupg"
 alias UpdateKeys="sudo pacman-key --init; sudo pacman-key --populate archlinux"
 alias SystemUpdate="sudo pacman -Sy; sudo pacman -Syu"
@@ -33,6 +33,7 @@ alias CopyConfig="cp config.py last_config.py"
 
 # Updates
 alias UpdateYay="makepkg -si /opt/yay-git"
+alias YayUpdates="yay -Syu"
 alias UpdateCode="yay -S visual-studio-code-bin"
 alias UpdateEdge="yay -S microsoft-edge-dev-bin"
 
