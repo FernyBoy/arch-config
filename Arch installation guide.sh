@@ -114,9 +114,14 @@ git clone https://github.com/FernyBoy/arch-config.git
 # Reemplaza el archivo "/etc/pacman.d/mirrorlist" por el que esta en el repositorio
 sudo cp ./mirrorlist /etc/pacman.d/mirrorlist
 
-# Instala
+# Instala el administrador de ventanas
 sudo pacman -S xorg xorg-server qtile lightdm lightdm-gtk-greeter
 sudo systemctl enable lightdm
+
+# Instala el controlador de audio
+sudo pacman -S pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber
+sudo systemctl --user enable --now pipewire.service pipewire.socket wireplumber.service
+sudo systemctl --user enable --now pipewire pipewire-pulse wireplumber
 
 # Instalación de YAY
 cd /opt
