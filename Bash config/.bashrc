@@ -5,6 +5,11 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+    . /usr/share/bash-completion/bash_completion
+fi
+
+
 parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ 󰊢 \1/'
 }
@@ -36,8 +41,6 @@ alias UpdateYay="makepkg -si /opt/yay-git"
 alias YayUpdates="yay -Syu"
 alias UpdateCode="yay -S visual-studio-code-bin"
 alias UpdateEdge="yay -S microsoft-edge-dev-bin"
-
-alias EDW="cd Docs/Learning/Platzi/Desarrollo\ e\ ingenieria/Escuela\ de\ desarrollo\ web/"
 
 # Time
 alias Time="sudo timedatectl set-time "
@@ -76,7 +79,7 @@ alias tsw="npx tsc --watch"
 
 # Disks cli
 alias ShowDisks="udisksctl status"
-alias OpenDisks="cd /run/media/Fernando"
+alias OpenDisks="cd /run/media/$USER"
 alias MountDisk="udisksctl mount -b "
 alias UnmountDisk="udisksctl unmount -b "
 
