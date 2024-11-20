@@ -14,6 +14,12 @@ parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ 󰊢 \1/'
 }
 
+#Ma shit
+alias shit='shutdown now'
+
+#Screen
+alias DoubleScreen="xrandr --output eDP-1 --primary --mode 1920x1200 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-1-0 --off --output DP-1-1 --off --output DP-1-2 --off --output DP-1-3 --off --output HDMI-1-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1-4 --off"
+
 # Navigation
 alias ls='ls --color=auto'
 alias c='clear'
@@ -32,8 +38,8 @@ alias UpdateKeys="sudo pacman-key --init; sudo pacman-key --populate archlinux"
 alias SystemUpdate="sudo pacman -Sy; sudo pacman -Syu"
 
 # Qtile System Emergency
-alias QtileEmergency='cd .config/qtile/ ; mv config.py my_config.py ; mv default_config.py config.py'
-alias EmergencyEnd='cd .config/qtile/ ; mv config.py default_config.py ; mv my_config.py config.py'
+alias QtileEmergency='cd /home/$USER/.config/qtile/ ; mv config.py my_config.py ; mv default_config.py config.py'
+alias EmergencyEnd='cd /home/$USER/.config/qtile/ ; mv config.py default_config.py ; mv my_config.py config.py'
 alias CopyConfig="cp config.py last_config.py"
 
 # Updates
@@ -71,6 +77,8 @@ alias gtrsthd="git reset --hard"
 alias gtm="git merge"
 alias AddSSH="eval '$(ssh-agent -s)' && ssh-add ~/.ssh/id_rsa"
 
+# Pyton
+alias RunNvidiaServer="python -m notebook --NotebookApp.allow_origin='https://colab.research.google.com' --port=8888 --NotebookApp.port_retries=0"
 
 # TypeScript
 alias tsi="npm i typescript"
@@ -98,7 +106,7 @@ alias Screen480="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 480"
 
 # Programs
 alias Edge="microsoft-edge-dev &"
-alias Netbeans="~/Programs/Netbeans/ProgramFiles/bin/netbeans &"
+alias NetBeans="~/Programs/NetBeans/ProgramFiles/bin/netbeans &"
 
 # JetBrains
 alias IntelliJ="~/Programs/JetBrains/IntelliJ/ProgramFiles/bin/idea &"
@@ -110,3 +118,19 @@ alias IntelliJ="~/Programs/JetBrains/IntelliJ/ProgramFiles/bin/idea &"
 PS1='\[\033[01;34m\] \u \[\033[01;35m\] ${PWD#${PWD%/*/*/*}/}\[\033[01;31m\]$(parse_git_branch)\[\033[00m\] \n '
 
 PATH=~/.console-ninja/.bin:$PATH
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/Ferny/Programs/Anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/Ferny/Programs/Anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/Ferny/Programs/Anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/Ferny/Programs/Anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
