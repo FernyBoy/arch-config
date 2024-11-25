@@ -81,6 +81,12 @@ alias AddSSH="eval '$(ssh-agent -s)' && ssh-add ~/.ssh/id_rsa"
 # Pyton
 alias RunNvidiaServer="python -m notebook --NotebookApp.allow_origin='https://colab.research.google.com' --port=8888 --NotebookApp.port_retries=0"
 
+# tmux
+alias t="tmux"
+alias tl="tmux ls"
+alias ta="tmux a"
+alias tns="tmux new -s"
+
 # TypeScript
 alias tsi="npm i typescript"
 alias tsnode="npx ts-node "
