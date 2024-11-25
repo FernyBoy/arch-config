@@ -26,7 +26,6 @@ alias c='clear'
 alias l='ls -alh'
 alias Home='cd ~'
 alias Bash='vim ~/.bashrc'
-alias RefreshBash='source /home/$USER/.bashrc'
 alias Qconfig="vim ~/.config/qtile/config.py"
 
 # Pacman
@@ -36,7 +35,7 @@ alias Install="sudo pacman -S"
 alias Uninstall="sudo pacman -Rns"
 alias DeleteSignatures="sudo rm -r /etc/pacman.d/gnupg"
 alias UpdateKeys="sudo pacman-key --init; sudo pacman-key --populate archlinux"
-alias SystemUpdate="sudo pacman -Sy; sudo pacman -Syu"
+alias SystemUpdate="sudo pacman -Sy -y; sudo pacman -Syu -y"
 
 # Qtile System Emergency
 alias QtileEmergency='cd /home/$USER/.config/qtile/ ; mv config.py my_config.py ; mv default_config.py config.py'
@@ -45,7 +44,7 @@ alias CopyConfig="cp config.py last_config.py"
 
 # Updates
 alias UpdateYay="makepkg -si /opt/yay-git"
-alias YayUpdates="yay -Syu"
+alias YayUpdates="yay -Syu -y"
 alias UpdateCode="yay -S visual-studio-code-bin"
 alias UpdateEdge="yay -S microsoft-edge-dev-bin"
 
