@@ -27,6 +27,7 @@ alias c='clear'
 alias l='ls -alh'
 alias Home='cd ~'
 alias Bash='vim ~/.bashrc'
+alias RefreshBash="source /home/Ferny/.bashrc"
 alias Qconfig="vim ~/.config/qtile/config.py"
 
 # Pacman
