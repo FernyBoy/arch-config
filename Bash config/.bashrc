@@ -16,7 +16,7 @@ parse_git_branch() {
 
 #Ma shit
 alias shit='shutdown now'
-alias ohshit"reboot"
+alias ohshit="reboot"
 
 #Screen
 alias DoubleScreen="xrandr --output eDP-1 --primary --mode 1920x1200 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-1-0 --off --output DP-1-1 --off --output DP-1-2 --off --output DP-1-3 --off --output HDMI-1-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1-4 --off"
@@ -27,7 +27,7 @@ alias c='clear'
 alias l='ls -alh'
 alias Home='cd ~'
 alias Bash='vim ~/.bashrc'
-alias RefreshBash="source /home/Ferny/.bashrc"
+alias RefreshBash="source /home/$USER/.bashrc"
 alias Qconfig="vim ~/.config/qtile/config.py"
 
 # Pacman
@@ -67,6 +67,7 @@ alias gtps="git push"
 alias gtpl="git pull"
 alias gtb="git branch"
 alias gtbdlt="git branch -d"
+alias gts="git switch"
 alias gtcheck="git checkout"
 alias gtchecknb="git checkout -b"
 alias gtr="git remote"
@@ -81,12 +82,6 @@ alias AddSSH="eval '$(ssh-agent -s)' && ssh-add ~/.ssh/id_rsa"
 
 # Pyton
 alias RunNvidiaServer="python -m notebook --NotebookApp.allow_origin='https://colab.research.google.com' --port=8888 --NotebookApp.port_retries=0"
-
-# tmux
-alias t="tmux"
-alias tl="tmux ls"
-alias ta="tmux a"
-alias tns="tmux new -s"
 
 # TypeScript
 alias tsi="npm i typescript"
@@ -115,10 +110,13 @@ alias Screen480="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 480"
 # Programs
 alias Edge="microsoft-edge-dev &"
 alias NetBeans="~/Programs/NetBeans/ProgramFiles/bin/netbeans &"
+alias Discord="/home/Ferny/Programs/Discord/Discord &"
 
 # JetBrains
 alias IntelliJ="~/Programs/JetBrains/IntelliJ/ProgramFiles/bin/idea &"
 
+# arch-config
+alias CopyBashConfig="cp /home/$USER/.bashrc /home/$USER/Repos/arch-config/Bash\ config/"
 
 #PS1='\u \W\$(git_branch)\$ '
 # PS1="\u \[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] $ "
