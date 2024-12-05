@@ -120,8 +120,8 @@ git clone https://github.com/FernyBoy/arch-config.git
 sudo cp ./mirrorlist /etc/pacman.d/mirrorlist
 
 # Instala el administrador de ventanas
-sudo pacman -S xorg xorg-server qtile lightdm lightdm-gtk-greeter
-sudo systemctl enable lightdm
+sudo pacman -S xorg xorg-server qtile sddm lightdm lightdm-gtk-greeter
+sudo systemctl enable sddm
 
 # Instala el controlador de audio
 sudo pacman -S dbus pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber
