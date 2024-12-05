@@ -72,9 +72,12 @@ vim /etc/hosts
 127.0.1.1   FernyLinux.localhost FernyLinux
 "
 
+# Network manager
 passwd
 pacman -S networkmanager
 systemctl enable NetworkManager
+
+# Grub
 pacman -S grub efibootmgr
 grub-install --target=x86_64-efi --efi-directory=/mnt/boot
 pacman -S os-prober
@@ -85,6 +88,8 @@ pacman -S os-prober
 grub-mkconfig -o /boot/grub/grub.cfg
 os-prober
 update-grub
+
+# Agregar usuario
 useradd -m <usuario>
 passwd <usuario>
 usermod -aG wheel,audio,video,storage <usuario>
@@ -119,9 +124,9 @@ sudo pacman -S xorg xorg-server qtile lightdm lightdm-gtk-greeter
 sudo systemctl enable lightdm
 
 # Instala el controlador de audio
-sudo pacman -S pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber
-sudo systemctl --user enable --now pipewire.service pipewire.socket wireplumber.service
-sudo systemctl --user enable --now pipewire pipewire-pulse wireplumber
+sudo pacman -S dbus pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber
+systemctl --user enable --now pipewire.service pipewire.socket wireplumber.service
+systemctl --user enable --now pipewire pipewire-pulse wireplumber
 
 # Instalación de YAY
 cd /opt
