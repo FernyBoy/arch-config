@@ -9,11 +9,6 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
 fi
 
-
-parse_git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ 󰊢 \1/'
-}
-
 #Ma shit
 alias shit='shutdown now'
 alias ohshit="reboot"
@@ -118,25 +113,16 @@ alias IntelliJ="~/Programs/JetBrains/IntelliJ/ProgramFiles/bin/idea &"
 # arch-config
 alias CopyBashConfig="cp /home/$USER/.bashrc /home/$USER/Repos/arch-config/Bash\ config/"
 
-#PS1='\u \W\$(git_branch)\$ '
-# PS1="\u \[\033[32m\]\w\[\033[33m\]\$(git_branch)\[\033[00m\] $ "
+parse_git_branch() 
+{
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ 󰊢 \1/'
+}
 
-PS1='\[\033[01;34m\] \u \[\033[01;35m\] ${PWD#${PWD%/*/*/*}/}\[\033[01;31m\]$(parse_git_branch)\[\033[00m\] \n '
+styled_parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/' | \
+    awk '{printf "   \033[31m\033[97;41m 󰊢 %s \033[m\033[31m", $0}'
+}
 
-PATH=~/.console-ninja/.bin:$PATH
+PS2='\[\033[01;34m\]󰟍 \u \[\033[01;35m\]  ${PWD#${PWD%/*/*/*}/}\[\033[01;31m\] $(parse_git_branch) \[\033[00m\] \n '
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/Ferny/Programs/Anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/Ferny/Programs/Anaconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/Ferny/Programs/Anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/Ferny/Programs/Anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
+PS1='\n\[\033[34m\]\[\033[97;44m\] 󰟍 \u  \[\033[35m\]\[\033[97;45m\]  ${PWD#${PWD%/*/*/*}/} \[\033[0m\]\[\033[35m\]$(styled_parse_git_branch) \n\[\033[0m\]  '
