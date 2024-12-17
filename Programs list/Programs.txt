@@ -8,12 +8,11 @@ feh 3.10.3-1
 git 2.47.1-1
 grub 2:2.12-3
 htop 3.3.0-3
-lightdm 1:1.32.0-6
-lightdm-gtk-greeter 1:2.0.9-1
-linux 6.12.1.arch1-1
-linux-firmware 20241111.b5885ec5-1
+i3lock 2.15-2
+linux 6.12.4.arch1-1
+linux-firmware 20241210.b00a7f7e-1
 lxappearance 0.6.3-5
-microsoft-edge-dev-bin 132.0.2957.11-1
+microsoft-edge-dev-bin 133.0.3000.0-1
 neovim 0.10.2-2
 network-manager-applet 1.36.0-1
 networkmanager 1.50.0-1
@@ -27,6 +26,7 @@ pipewire-jack 1:1.2.7-1
 pipewire-pulse 1:1.2.7-1
 qtile 0.29.0-1
 reflector 2023-2
+ripgrep 14.1.1-1
 rofi 1.7.5-3
 sddm 0.21.0-4
 sddm-sugar-dark 1.2-1
@@ -39,7 +39,7 @@ udiskie 2.5.3-1
 udisks2 2.10.1-5
 unzip 6.0-21
 vim 9.1.0866-1
-visual-studio-code-bin 1.95.3-1
+visual-studio-code-bin 1.96.0-1
 volumeicon 0.5.1-6
 wget 1.25.0-1
 wireplumber 0.5.7-1
@@ -73,7 +73,7 @@ xorg-xgamma 1.0.7-2
 xorg-xhost 1.0.9-2
 xorg-xinput 1.6.4-2
 xorg-xkbcomp 1.4.7-1
-xorg-xkbevd 1.1.5-2
+xorg-xkbevd 1.1.6-1
 xorg-xkbutils 1.0.6-1
 xorg-xkill 1.0.6-2
 xorg-xlsatoms 1.1.4-2

@@ -24,6 +24,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+import os
 from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
@@ -33,6 +34,7 @@ mod = "mod4"
 terminal = guess_terminal()
 
 keys = [
+    Key([mod], "l", lazy.spawn("i3lock -c 000000"), desc="Lock the screen"),
     # A list of available commands that can be bound to keys can be found
     # at https://docs.qtile.org/en/latest/manual/config/lazy.html
     # Switch between windows
@@ -112,7 +114,7 @@ keys = [
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
 ]
 
-groups = [Group(i) for i in ["󰜫 Web", " Dev", "  Src", " Code", " Work", " Shell"]]
+groups = [Group(i) for i in ["󰜫 Web", "  Src", " Code", " Dev", " Work", " Shell"]]
 
 for i, group in enumerate(groups):
     actual_key = str(i + 1)
