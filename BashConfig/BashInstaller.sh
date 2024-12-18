@@ -1,0 +1,1 @@
+cp .bashrc /home/$USER

@@ -1,0 +1,1 @@
+cp .xprofile /home/$USER/

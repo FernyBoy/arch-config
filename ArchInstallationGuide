@@ -136,7 +136,7 @@ makepkg -si
 # Entra a "arch-config"
 cd 'Auto installer'
 chmod +x autoInstall.sh
-bash autoInstall.sh ../Programs\ list/Programs.txt
+bash autoInstall.sh Programs\ list/Programs.txt
 
 # Entra a la carpeta "Themes - Icons"
 # En: /Cursor

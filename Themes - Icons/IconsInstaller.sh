@@ -9,3 +9,6 @@ sudo mv Theme/Fluent-round-dark /usr/share/themes
 
 sudo cp Fonts/*.ttf /usr/share/fonts/
 sudo cp Fonts/*.otf /usr/share/fonts/
+
+mkdir -p /home/$USER/Images
+cp -r Walls /home/$USER/Images

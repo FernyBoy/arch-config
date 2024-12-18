@@ -2,11 +2,11 @@
 shape = "Beam"
 
 [window]
-opacity = 0.8
+opacity = 0.7
 
 [window.padding]
 x = 10
-y = 10
+y = 5
 
 [font]
 normal = { family = "JetBrainsMonoNerdFont", style = "regular" }
