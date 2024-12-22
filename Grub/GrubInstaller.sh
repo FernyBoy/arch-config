@@ -1,3 +1,4 @@
 tar -xf argon-grub-theme-3.2.2.tar.gz
-mkdir /home/$USER/Docs/grub-config
-cp argon-grub-theme-3.2.2 /home/$USER/Docs/grub-config/
+mkdir -p /home/$USER/Docs/grub-config
+mv argon-grub-theme-3.2.2 /home/$USER/Docs/grub-config/
+
