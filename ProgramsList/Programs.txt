@@ -3,6 +3,7 @@ arandr 0.1.11-3
 base 3-2
 base-devel 1-2
 cbatticon 1.6.13-2
+dbus
 efibootmgr 18-3
 feh 3.10.3-1
 flameshot 12.1.0-5
@@ -45,6 +46,7 @@ volumeicon 0.5.1-6
 wget 1.25.0-1
 wireplumber 0.5.7-1
 xf86-video-vesa 2.6.0-2
+xorg
 xorg-bdftopcf 1.1.2-1
 xorg-docs 1.7.3-2
 xorg-font-util 1.4.1-2
