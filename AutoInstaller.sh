@@ -28,6 +28,11 @@ cd ./SDDM
 ./InstallSddmTheme.sh
 cd ../
 
+# Nvim installer
+cd ./Nvim
+./NvimInstaller.sh
+cd ../
+
 # Themes and icons installer
 cd ./Themes\ -\ Icons
 ./IconsInstaller.sh

@@ -113,19 +113,9 @@ ping archlinux.org
 sudo pacman -S git
 git clone https://github.com/FernyBoy/arch-config.git
 
-# Reemplaza el archivo "/etc/pacman.d/mirrorlist" por el que esta en el repositorio
-sudo cp ./mirrorlist /etc/pacman.d/mirrorlist
-
-# Instala el administrador de ventanas
-sudo pacman -S xorg xorg-server qtile sddm i3lock
-sudo systemctl enable sddm
-
-# Instala el controlador de audio
-sudo pacman -S dbus pipewire pipewire-alsa pipewire-pulse pipewire-jack wireplumber
-systemctl --user enable --now pipewire.service pipewire.socket wireplumber.service
-systemctl --user enable --now pipewire pipewire-pulse wireplumber
-
-# Instalación de YAY
+# Instala yay con el archivo incluido
+./YayInstaller/yayInstaller.sh
+# Tambien lo puedes hacer de forma manual de la siguiente manera
 cd /opt
 sudo git clone https://aur.archlinux.org/yay-git.git
 sudo chown -R <user>:<user> ./yay-git
@@ -133,46 +123,25 @@ cd yay-git
 sudo pacman -S --needed git base-devel
 makepkg -si
 
-# Entra a "arch-config"
-cd 'Auto installer'
-chmod +x autoInstall.sh
-bash autoInstall.sh Programs\ list/Programs.txt
+# Ejecuta el auto installer
+sudo ./AutoInstaller.sh
 
-# Entra a la carpeta "Themes - Icons"
-# En: /Cursor
-tar -xf Nordic-cursors.tar.xz
-sudo mv Nordic-cursors /usr/share/icons
-# En: /Icons
-unzip BlackoutIcons.zip
-sudo mv BlackoutIcons /usr/share/icons
-# En: /Theme
-tar -xf Fluent-round-dark.tar.xz
-sudo mv Fluent-round-dark /usr/share/themes
-# En: /Fonts
-sudo cp ./*.ttf /usr/share/fonts/
-sudo cp ./*.otf /usr/share/fonts/
+# Activa el sddm
+sudo systemctl enable sddm
+
+# Activa los servicios de audio
+systemctl --user enable --now pipewire.service pipewire.socket wireplumber.service
+systemctl --user enable --now pipewire pipewire-pulse wireplumber
+
+# -----------------------------
+# Al inicio de sddm, debes cambiar de Qtile(Wayland) a Qtile
+# -----------------------------
+
 # Realiza todos los cambios necesarios utilizando "lxappearance"
-
-# Entra a la carpeta "Alacritty"
-mkdir ~/.config/alacritty
-cp alacritty.yml ~/.config/alacritty/
-
-# Entra a la carpeta "Background"
-mkdir ~/Images/Walls
-cp 'Dark arch.png' ~/Images/Walls
-
-# Entra a la carpeta "Bash config"
-cp .bashrc ~/
-
-# Entra a la carpeta XProfile
-cp .xprofile ~/
 
 # Cambia el nombre y el orden de windows en el archivo /boot/grub/grub.cfg
 vim /boot/grub/grub.cfg
 
-# Entra a la carpeta "Grub"
-Extract argon-grub-theme-3.2.2.tar.gz
-mkdir ~/Docs/grub-config
-mv argon-grub-theme-3.2.2 ~/Docs/grub-config
-cd ~/Docs/grub-config/
+# Instala el estilo del grub
+cd /home/$USER/Docs/grub-config/argon-grub-theme-3.2.2
 sudo ./install.sh --install --resolution 1920x1080 --background Night --fontsize 16
