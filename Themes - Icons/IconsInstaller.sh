@@ -1,11 +1,17 @@
-tar -xf Cursor/Nordic-cursors.tar.xz
-sudo mv Cursor/Nordic-cursors /usr/share/icons
+cd ./Cursor
+tar -xf Nordic-cursors.tar.xz
+sudo mv Nordic-cursors /usr/share/icons
+cd ../
 
-unzip Icons/BlackoutIcons.zip
-sudo mv Icons/BlackoutIcons /usr/share/icons
+cd ./Icons
+unzip BlackoutIcons.zip
+sudo mv BlackoutIcons /usr/share/icons
+cd ../
 
-tar -xf Theme/Fluent-round-dark.tar.xz
-sudo mv Theme/Fluent-round-dark /usr/share/themes
+cd ./Theme
+tar -xf Fluent-round-dark.tar.xz
+sudo mv Fluent-round-dark /usr/share/themes
+cd ../
 
 sudo cp Fonts/*.ttf /usr/share/fonts/
 sudo cp Fonts/*.otf /usr/share/fonts/

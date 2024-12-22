@@ -1,1 +1,1 @@
-sudo cp mirrorList /etc/pacman.d/
+sudo cp mirrorlist /etc/pacman.d/

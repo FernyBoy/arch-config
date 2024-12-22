@@ -15,7 +15,7 @@ cd ../
 
 # Programs installer
 cd ./ProgramsList
-./ProgramsInstaller.sh
+./ProgramsInstaller.sh Programs.txt
 cd ../
 
 # Qtile installer
