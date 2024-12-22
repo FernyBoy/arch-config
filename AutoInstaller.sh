@@ -1,23 +1,39 @@
 # Alacritty installer
-./Alacritty/AlacrittyInstaller.sh
+cd ./Alacritty
+./AlacrittyInstaller.sh
+cd ../
 
 # Bash installer
-./BashConfig/BashInstaller.sh
+cd ./BashConfig
+./BashInstaller.sh
+cd ../
 
 # Mirrors installer
-./Mirrors/MirrorsInstaller.sh
+cd ./Mirrors
+./MirrorsInstaller.sh
+cd ../
 
 # Programs installer
-./ProgramsList/ProgramsInstaller.sh
+cd ./ProgramsList
+./ProgramsInstaller.sh
+cd ../
 
 # Qtile installer
-./QtileConfig/QtileInstaller.sh
+cd ./QtileConfig
+./QtileInstaller.sh
+cd ../
 
 # SDDM installer
-./SDDM/InstallSddmTheme.sh
+cd ./SDDM
+./InstallSddmTheme.sh
+cd ../
 
 # Themes and icons installer
-./Themes\ -\ Icons/IconsInstaller.sh
+cd ./Themes\ -\ Icons
+./IconsInstaller.sh
+cd ../
 
 # XProfile installer
-./XProfile/XProfileInstaller.sh
+cd ./XProfile
+./XProfileInstaller.sh
+cd ../
