@@ -9,6 +9,10 @@ if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
 fi
 
+export MANPATH=/usr/local/texlive/2024/texmf-dist/doc/man:$MANPATH
+export INFOPATH=/usr/local/texlive/2024/texmf-dist/doc/info:$INFOPATH
+export PATH=/usr/local/texlive/2024/bin/x86_64-linux:$PATH
+
 #Ma shit
 alias shit='shutdown now'
 alias ohshit="reboot"
@@ -76,13 +80,11 @@ alias gtrsthd="git reset --hard"
 alias gtm="git merge"
 alias AddSSH="eval '$(ssh-agent -s)' && ssh-add ~/.ssh/id_rsa"
 
+# Pdfs
+alias OpenPdf="zathura"
+
 # Pyton
 alias RunNvidiaServer="python -m notebook --NotebookApp.allow_origin='https://colab.research.google.com' --port=8888 --NotebookApp.port_retries=0"
-
-# TypeScript
-alias tsi="npm i typescript"
-alias tsnode="npx ts-node "
-alias tsw="npx tsc --watch"
 
 # Disks cli
 alias ShowDisks="udisksctl status"
@@ -112,7 +114,7 @@ alias Discord="/home/Ferny/Programs/Discord/Discord &"
 alias IntelliJ="~/Programs/JetBrains/IntelliJ/ProgramFiles/bin/idea &"
 
 # arch-config
-alias CopyBashConfig="cp /home/$USER/.bashrc /home/$USER/Repos/arch-config/Bash\ config/"
+alias CopyBashConfig="cp /home/$USER/.bashrc /home/$USER/Repos/arch-config/BashConfig"
 
 parse_git_branch() 
 {
@@ -131,3 +133,7 @@ PS1='\n\[\033[34m\]\[\033[97;44m\] 󰟍 \u  \[\033[35m\]\[\033[97;45m\] �
 PATH=~/.console-ninja/.bin:$PATH
 # Created by `pipx` on 2024-12-24 04:03:40
 export PATH="$PATH:/home/Ferny/.local/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

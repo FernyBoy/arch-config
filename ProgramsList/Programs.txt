@@ -99,3 +99,4 @@ xorg-xwininfo 1.1.6-2
 xorg-xwud 1.0.7-1
 yay-git 12.4.2.r15.gf23fe98a-1
 yay-git-debug 12.4.2.r15.gf23fe98a-1
+zathura
