@@ -23,6 +23,7 @@ alias l='ls -a'
 alias Home='cd ~'
 alias Bash='vim ~/.bashrc'
 alias RefreshBash="source /home/$USER/.bashrc"
+alias OpenMirrors="cd /etc/pacman.d/"
 alias Qconfig="vim ~/.config/qtile/config.py"
 
 # Pacman
@@ -32,7 +33,7 @@ alias Install="sudo pacman -S"
 alias Uninstall="sudo pacman -Rns"
 alias DeleteSignatures="sudo rm -r /etc/pacman.d/gnupg"
 alias UpdateKeys="sudo pacman-key --init; sudo pacman-key --populate archlinux"
-alias SystemUpdate="sudo pacman -Sy -y; sudo pacman -Syu -y"
+alias SystemUpdate="DeleteSignatures; UpdateKeys; sudo pacman -Sy -y; sudo pacman -Syu -y"
 
 # Qtile System Emergency
 alias QtileEmergency='cd /home/$USER/.config/qtile/ ; mv config.py my_config.py ; mv default_config.py config.py'
@@ -126,3 +127,7 @@ styled_parse_git_branch() {
 PS2='\[\033[01;34m\]󰟍 \u \[\033[01;35m\]  ${PWD#${PWD%/*/*/*}/}\[\033[01;31m\] $(parse_git_branch) \[\033[00m\] \n '
 
 PS1='\n\[\033[34m\]\[\033[97;44m\] 󰟍 \u  \[\033[35m\]\[\033[97;45m\]  ${PWD#${PWD%/*/*/*}/} \[\033[0m\]\[\033[35m\]$(styled_parse_git_branch) \n\[\033[0m\]  '
+
+PATH=~/.console-ninja/.bin:$PATH
+# Created by `pipx` on 2024-12-24 04:03:40
+export PATH="$PATH:/home/Ferny/.local/bin"

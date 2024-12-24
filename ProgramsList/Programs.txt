@@ -26,6 +26,7 @@ pipewire 1:1.2.7-1
 pipewire-alsa 1:1.2.7-1
 pipewire-jack 1:1.2.7-1
 pipewire-pulse 1:1.2.7-1
+python-pipx
 qtile 0.29.0-1
 reflector 2023-2
 ripgrep 14.1.1-1
