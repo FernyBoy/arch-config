@@ -1,0 +1,36 @@
+----- JetBrainsMono -----
+Type: Normal
+File: JetBrainsMonoNerdFont-Regular.ttf
+Family: JetBrainsMono Nerd Font, JetBrainsMono NF
+Style: Regular
+
+Type: Mono
+File: JetBrainsMonoNerdFontMono-Regular.ttf
+Family: JetBrainsMono Nerd Font MonoJetBrainsMono NFM
+Style: Regular
+
+Type: NL
+File: JetBrainsMonoNLNerdFont-Regular.ttf
+Family: JetBrainsMonoNL Nerd Font, JetBrainsMonoNL NF
+Style: Regular
+
+Type: NL & Mono
+File: JetBrainsMonoNLNerdFontMono-Regular.ttf 
+Family: JetBrainsMonoNL Nerd Font Mono, JetBrainsMonoNL NFM
+Style: Regular
+
+Type: Mono
+File: JetBrainsMonoNerdFontMono-SemiBold.ttf
+Family: JetBrainsMono Nerd Font Mono, JetBrainsMono NFM, JetBrainsMono NFM SemiBold
+Style: SemiBold, Regular
+
+Type: NL & Mono
+File: JetBrainsMonoNLNerdFontMono-SemiBold.ttf
+Family: JetBrainsMonoNL Nerd Font Mono, JetBrainsMonoNL NFM, JetBrainsMonoNL NFM SemiBold
+Style: SemiBold, Regular
+
+----- Monocraft -----
+Type: Mono
+File MOnocraft.otf
+Family: Monocraft
+Style: Medium
