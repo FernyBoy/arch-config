@@ -2,11 +2,13 @@ alacritty 0.14.0-1
 arandr 0.1.11-3
 base 3-2
 base-devel 1-2
+blueman
 cbatticon 1.6.13-2
 dbus
 efibootmgr 18-3
 feh 3.10.3-1
 flameshot 12.1.0-5
+fontconfig
 git 2.47.1-1
 grub 2:2.12-3
 htop 3.3.0-3
