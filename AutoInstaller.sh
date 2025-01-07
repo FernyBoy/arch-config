@@ -23,6 +23,11 @@ cd ./QtileConfig
 ./QtileInstaller.sh
 cd ../
 
+# Rofi theme installer
+cd ./Rofi
+./RofiThemeInstaller.sh
+cd ../
+
 # SDDM installer
 cd ./SDDM
 ./InstallSddmTheme.sh
