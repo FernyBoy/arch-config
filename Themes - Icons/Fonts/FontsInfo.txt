@@ -34,3 +34,9 @@ Type: Mono
 File MOnocraft.otf
 Family: Monocraft
 Style: Medium
+
+----- Century Gothic -----
+Type: Normal
+File: centurygothic.ttf
+Family: Century Gothic
+Style: Regular, Normal, Standard
