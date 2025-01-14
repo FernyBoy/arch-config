@@ -3,6 +3,7 @@ arandr 0.1.11-3
 base 3-2
 base-devel 1-2
 blueman
+brightnessctl
 cbatticon 1.6.13-2
 dbus
 efibootmgr 18-3
