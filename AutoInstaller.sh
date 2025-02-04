@@ -13,6 +13,11 @@ cd ./Mirrors
 ./MirrorsInstaller.sh
 cd ../
 
+# Picom installer
+cd ./Picom
+./PicomInstaller.sh
+cd ../
+
 # Programs installer
 cd ./ProgramsList
 ./ProgramsInstaller.sh Programs.txt
