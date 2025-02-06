@@ -1,6 +1,8 @@
 # Conexión Inalámbrica
 
-loadkeys en
+loadkeys us # Para inglés
+loadkeys la-latin1 # Para español
+
 iwctl
 device list
 station <NOMBRE_DISPOSITIVO> scan
