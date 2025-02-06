@@ -81,7 +81,7 @@ systemctl enable NetworkManager
 
 # Grub
 pacman -S grub efibootmgr
-grub-install --target=x86_64-efi --efi-directory=/mnt/boot
+grub-install /dev/<disco_raiz>
 pacman -S os-prober
 sudo vim /etc/default/grub # Descomenta "GRUB_DISABLE_OS_PROBER=false"
 grub-mkconfig -o /boot/grub/grub.cfg
