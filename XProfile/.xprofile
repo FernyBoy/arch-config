@@ -1,6 +1,7 @@
-pulseaudio &
 feh --bg-scale Images/Walls/Dark\ waves.png &
 picom & 
+pulseaudio &
+nm-applet &
 volumeicon &
 cbatticon &
-nm-applet &
+autokey-gtk &

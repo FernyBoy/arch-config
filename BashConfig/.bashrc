@@ -16,21 +16,26 @@ export PATH=/usr/local/texlive/2024/bin/x86_64-linux:$PATH
 #Ma shit
 alias shit='shutdown now'
 alias ohshit="reboot"
+alias DeepSeekCode="ollama run deepseek-coder-v2"
+alias DeepSeekR1="ollama run deepseek-r1:32b"
+alias Ciclo="cd /home/$USER/Repos/TareasUnison/2025-1"
 
-#Screen
-alias DoubleScreen="xrandr --output eDP-1 --primary --mode 1920x1200 --pos 0x0 --rotate normal --output HDMI-1 --off --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-1-0 --off --output DP-1-1 --off --output DP-1-2 --off --output DP-1-3 --off --output HDMI-1-0 --mode 1920x1080 --pos 1920x0 --rotate normal --output DP-1-4 --off; feh --bg-scale Images/Walls/Dark\ waves.png &"
+alias Screen120="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 120"
+alias Screen240="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 240"
+alias Screen480="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 480"
+
+# Screen
+PrimaryScreen=$(xrandr --query | grep -v "primary" | grep " connected" | awk '{print $1}')
+PrimaryResolution=$(xrandr --query | grep "^$PrimaryScreen " | awk '{print $3}' | cut -d"+" -f1)
+SecondaryScreen=$(xrandr --query | grep " primary" | awk '{print $1}')
+SecondaryResolution=$(xrandr --query | grep " primary" | awk '{print $4}' | cut -d"+" -f1)
+
+alias DoubleScreen="xrandr --output $PrimaryScreen --primary --mode $PrimaryResolution --rotate normal --output $SecondaryScreen --mode $SecondaryResolution --rotate normal; feh --bg-scale Images/Walls/Dark\ waves.png &"
 
 # Navigation
 alias ls='ls -lh --color=auto'
 alias c='clear'
 alias l='ls -a'
-alias Home='cd ~'
-alias Bash='nvim ~/.bashrc'
-alias Brightness='xrandr --output eDP-1 --brightness'
-alias RefreshBash="source /home/$USER/.bashrc"
-alias OpenMirrors="cd /etc/pacman.d/"
-
-alias Ciclo="cd /home/$USER/Repos/TareasUnison/2025-1"
 
 # Pacman
 alias Installed="pacman -Qe"
@@ -41,6 +46,7 @@ alias UpdatePgpKeys="sudo pacman-key --refresh-keys"
 alias DeleteSignatures="sudo rm -r /etc/pacman.d/gnupg"
 alias UpdateKeys="sudo pacman-key --init; sudo pacman-key --populate archlinux"
 alias SystemUpdate="DeleteSignatures; UpdateKeys; sudo pacman -Sy -y; sudo pacman -Syu -y"
+alias OpenMirrors="cd /etc/pacman.d/"
 
 # Qtile System Emergency
 alias QtileEmergency='cd /home/$USER/.config/qtile/ ; mv config.py my_config.py ; mv default_config.py config.py'
@@ -84,7 +90,7 @@ alias gtm="git merge"
 alias AddSSH="eval '$(ssh-agent -s)' && ssh-add ~/.ssh/id_rsa"
 
 # Pdfs
-alias OpenPdf="zathura"
+alias RunPdf="zathura"
 
 # Pyton
 alias RunNvidiaServer="python -m notebook --NotebookApp.allow_origin='https://colab.research.google.com' --port=8888 --NotebookApp.port_retries=0"
@@ -103,35 +109,27 @@ alias EmptyTrash="trash-empty"
 alias RestoreSingleFile="trash-restore"
 alias Trash="trash"
 
-# Screen
-alias Screen120="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 120"
-alias Screen240="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 240"
-alias Screen480="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 480"
-
 # Programs
 alias Edge="microsoft-edge-dev &"
 alias NetBeans="~/Programs/NetBeans/ProgramFiles/bin/netbeans &"
 alias Discord="/home/Ferny/Programs/Discord/Discord &"
 
-# JetBrains
-alias IntelliJ="~/Programs/JetBrains/IntelliJ/ProgramFiles/bin/idea &"
-
-# arch-config
-alias CopyBashConfig="cp /home/$USER/.bashrc /home/$USER/Repos/arch-config/BashConfig"
-
-parse_git_branch() 
-{
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ 󰊢 \1/'
-}
+# Bash
+alias Bash='nvim ~/.bashrc'
+alias RefreshBash="source /home/$USER/.bashrc"
 
 styled_parse_git_branch() {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/' | \
     awk '{printf "   \033[31m\033[97;41m 󰊢 %s \033[m\033[31m", $0}'
 }
+PS1='\n\[\033[34m\]\[\033[97;44m\] 󰟍 \u  \[\033[35m\]\[\033[97;45m\]  ${PWD#${PWD%/*/*/*}/} \[\033[0m\]\[\033[35m\]$(styled_parse_git_branch) \n\[\033[0m\]  '
 
+parse_git_branch() 
+{
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ 󰊢 \1/'
+}
 PS2='\[\033[01;34m\]󰟍 \u \[\033[01;35m\]  ${PWD#${PWD%/*/*/*}/}\[\033[01;31m\] $(parse_git_branch) \[\033[00m\] \n '
 
-PS1='\n\[\033[34m\]\[\033[97;44m\] 󰟍 \u  \[\033[35m\]\[\033[97;45m\]  ${PWD#${PWD%/*/*/*}/} \[\033[0m\]\[\033[35m\]$(styled_parse_git_branch) \n\[\033[0m\]  '
 
 PATH=~/.console-ninja/.bin:$PATH
 # Created by `pipx` on 2024-12-24 04:03:40

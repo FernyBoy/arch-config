@@ -82,6 +82,9 @@ keys = [
     Key([mod], "m", lazy.spawn("rofi -show-icons -show drun")),
     Key([mod, "shift"], "m", lazy.spawn("rofi -show-icons -show run")),
 
+    # Flameshot
+    Key([mod, "shift"], "s", lazy.spawn("flameshot gui")),
+
     # Pantallas
     Key([mod, "shift"], "p", lazy.spawn("arandr")),
 
