@@ -66,7 +66,7 @@ alias Date="sudo timedatectl set-date "
 alias AutoAdjustTime="sudo timedatectl set-ntp true"
 
 # Git
-alias gti="git init"
+alias gti="git init -b main"
 alias gta="git add"
 alias gtc="git commit -am"
 alias gtl="git log"
@@ -89,6 +89,20 @@ alias gtrst="git reset"
 alias gtrsthd="git reset --hard"
 alias gtm="git merge"
 alias AddSSH="eval '$(ssh-agent -s)' && ssh-add ~/.ssh/id_rsa"
+branch() 
+{
+    git rev-parse --abbrev-ref HEAD 2>/dev/null
+}
+Pull()
+{
+    gtpl origin branch
+}
+Push()
+{
+    gta .
+    gtc "$@"
+    gtps origin branch 
+}
 
 # Pdfs
 alias RunPdf="zathura"
