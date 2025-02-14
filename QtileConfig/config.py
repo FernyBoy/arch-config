@@ -74,6 +74,8 @@ keys = [
 
     # Microsoft edge dev
     Key([mod], "b", lazy.spawn("microsoft-edge-dev")),
+    Key([mod, "control"], "b", lazy.spawn("microsoft-edge-dev --new-window")),
+    Key([mod, "shift"], "b", lazy.spawn("microsoft-edge-dev --inprivate")),
 
     # VsCode
     Key([mod], "c", lazy.spawn("code")),
@@ -96,7 +98,7 @@ keys = [
     Key([], "XF86AudioLowerVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%")),
 
     Key([], "XF86AudioRaiseVolume", lazy.spawn("pactl set-sink-volume @DEFAULT_SINK@ +5%")),
-    
+   
     Key([], "XF86AudioMute", lazy.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle")),
    
 

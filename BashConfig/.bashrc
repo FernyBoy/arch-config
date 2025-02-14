@@ -25,17 +25,18 @@ alias Screen240="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 240"
 alias Screen480="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 480"
 
 # Screen
-PrimaryScreen=$(xrandr --query | grep -v "primary" | grep " connected" | awk '{print $1}')
-PrimaryResolution=$(xrandr --query | grep "^$PrimaryScreen " | awk '{print $3}' | cut -d"+" -f1)
-SecondaryScreen=$(xrandr --query | grep " primary" | awk '{print $1}')
-SecondaryResolution=$(xrandr --query | grep " primary" | awk '{print $4}' | cut -d"+" -f1)
+SecondaryScreen=$(xrandr --query | grep -v "primary" | grep " connected" | awk '{print $1}')
+SecondaryResolution=$(xrandr --query | grep "^$SecondaryScreen " | awk '{print $3}' | cut -d"+" -f1)
+PrimaryScreen=$(xrandr --query | grep " primary" | awk '{print $1}')
+PrimaryResolution=$(xrandr --query | grep " primary" | awk '{print $4}' | cut -d"+" -f1)
 
-alias DoubleScreen="xrandr --output $PrimaryScreen --primary --mode $PrimaryResolution --rotate normal --output $SecondaryScreen --mode $SecondaryResolution --rotate normal; feh --bg-scale Images/Walls/Dark\ waves.png &"
+alias DoubleScreen="xrandr --output $PrimaryScreen --primary --mode $PrimaryResolution --pos 0x0 --rotate normal --output $SecondaryScreen --mode 1920x1080 --pos 1920x0 --rotate normal; feh --bg-scale Images/Walls/Dark\ waves.png &"
 
 # Navigation
 alias ls='ls -lh --color=auto'
 alias c='clear'
 alias l='ls -a'
+alias view='viewnior'
 
 # Pacman
 alias Installed="pacman -Qe"
@@ -110,7 +111,16 @@ alias RestoreSingleFile="trash-restore"
 alias Trash="trash"
 
 # Programs
-alias Edge="microsoft-edge-dev &"
+edge() 
+{
+    if [[ "$1" == "private" ]]; then
+        shift  # Elimina "private" de los argumentos
+        microsoft-edge-dev "$@" --new-window --inprivate &
+    else
+        microsoft-edge-dev "$@" --new-window &
+    fi
+}
+
 alias NetBeans="~/Programs/NetBeans/ProgramFiles/bin/netbeans &"
 alias Discord="/home/Ferny/Programs/Discord/Discord &"
 
