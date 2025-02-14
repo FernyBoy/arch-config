@@ -1,4 +1,4 @@
-feh --bg-scale Images/Walls/Dark\ waves.png &
+feh --bg-scale Images/Walls/HorizonHouse.png &
 picom & 
 pulseaudio &
 nm-applet &

@@ -16,5 +16,5 @@ cd ../
 sudo cp Fonts/*.ttf /usr/share/fonts/
 sudo cp Fonts/*.otf /usr/share/fonts/
 
-mkdir -p /home/$USER/Images
-cp -r Walls /home/$USER/Images
+mkdir -p /home/$USER/Images/Walls
+cp /*.png /home/$USER/Images/Walls

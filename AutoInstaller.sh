@@ -3,6 +3,11 @@ cd ./Alacritty
 ./AlacrittyInstaller.sh
 cd ../
 
+# Assets installer
+cd ./Assets
+./AssetsInstaller.sh
+cd ../
+
 # Bash installer
 cd ./BashConfig
 ./BashInstaller.sh
@@ -41,11 +46,6 @@ cd ../
 # Nvim installer
 cd ./Nvim
 ./NvimInstaller.sh
-cd ../
-
-# Themes and icons installer
-cd ./Themes\ -\ Icons
-./IconsInstaller.sh
 cd ../
 
 # XProfile installer

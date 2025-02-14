@@ -50,6 +50,7 @@ udisks2
 unzip
 vim
 visual-studio-code-bin
+viewnior
 volumeicon
 wget
 wireplumber
