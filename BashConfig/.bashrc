@@ -68,7 +68,7 @@ alias AutoAdjustTime="sudo timedatectl set-ntp true"
 # Git
 alias gti="git init -b main"
 alias gta="git add"
-alias gtc="git commit -am"
+alias gtc="git commit -m "
 alias gtl="git log"
 alias gtlone="git log --oneline"
 alias gtg="git log --graph"
