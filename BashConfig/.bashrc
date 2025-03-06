@@ -19,6 +19,8 @@ alias ohshit="reboot"
 alias DeepSeekCode="ollama run deepseek-coder-v2"
 alias DeepSeekR1="ollama run deepseek-r1:32b"
 alias Ciclo="cd /home/$USER/Repos/TareasUnison/2025-1"
+alias LaRamona="ssh ramona@10.10.178.175"
+alias fg="make clean; fg"
 
 alias Screen120="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 120"
 alias Screen240="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 240"
@@ -30,13 +32,26 @@ SecondaryResolution=$(xrandr --query | grep "^$SecondaryScreen " | awk '{print $
 PrimaryScreen=$(xrandr --query | grep " primary" | awk '{print $1}')
 PrimaryResolution=$(xrandr --query | grep " primary" | awk '{print $4}' | cut -d"+" -f1)
 
-alias DoubleScreen="xrandr --output $PrimaryScreen --primary --mode $PrimaryResolution --pos 0x0 --rotate normal --output $SecondaryScreen --mode 1920x1080 --pos 1920x0 --rotate normal; feh --bg-scale Images/Walls/Dark\ waves.png &"
+# alias DoubleScreen="xrandr --output $PrimaryScreen --primary --mode $PrimaryResolution --pos 0x0 --rotate normal --output $SecondaryScreen --mode 1920x1080 --pos 1920x0 --rotate normal; feh --bg-scale Images/Walls/HorizonHouse.png &"
+
+alias DoubleScreen="xrandr --output eDP-1 --primary --mode 1920x1200 --pos 0x0 --rotate normal --output HDMI-1-0 --mode 1920x1080 --pos 1920x0 --rotate normal; feh --bg-scale Images/Walls/HorizonHouse.png &"
 
 # Navigation
 alias ls='ls -lh --color=auto'
 alias c='clear'
 alias l='ls -a'
-alias view='viewnior'
+view()
+{
+    viewnior "$@" &
+}
+zathura()
+{
+    zathura "$@" &
+}
+Search()
+{
+    history | grep "$@"
+}
 
 # Pacman
 alias Installed="pacman -Qe"
