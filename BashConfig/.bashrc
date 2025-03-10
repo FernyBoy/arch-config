@@ -16,10 +16,9 @@ export PATH=/usr/local/texlive/2024/bin/x86_64-linux:$PATH
 #Ma shit
 alias shit='shutdown now'
 alias ohshit="reboot"
-alias DeepSeekCode="ollama run deepseek-coder-v2"
-alias DeepSeekR1="ollama run deepseek-r1:32b"
+alias DeepSeek="ollama run deepseek-r1:8b"
 alias Ciclo="cd /home/$USER/Repos/TareasUnison/2025-1"
-alias LaRamona="ssh ramona@10.10.178.175"
+alias LaRamona="ssh ramona@10.10.235.245"
 alias fg="make clean; fg"
 
 alias Screen120="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 120"
@@ -44,10 +43,7 @@ view()
 {
     viewnior "$@" &
 }
-zathura()
-{
-    zathura "$@" &
-}
+
 Search()
 {
     history | grep "$@"
