@@ -69,12 +69,14 @@ keys = [
     # Terminal
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
 
+    Key([mod, "control"], "Return", lazy.spawn("alacritty --working-directory $(pwd)")),
+
     # Explorer
     Key([mod], "e", lazy.spawn("thunar")),
 
     # Microsoft edge dev
     Key([mod], "b", lazy.spawn("microsoft-edge-dev")),
-    Key([mod, "control"], "b", lazy.spawn("microsoft-edge-dev --new-window")),
+    Key([mod, "control"], "b", lazy.spawn("microsofta-edge-dev --new-window")),
     Key([mod, "shift"], "b", lazy.spawn("microsoft-edge-dev --inprivate")),
 
     # VsCode
@@ -87,11 +89,17 @@ keys = [
     # Flameshot
     Key([mod, "shift"], "s", lazy.spawn("flameshot gui")),
 
+    # Ferdium 
+    Key([mod], "f", lazy.spawn("ferdium")),
+
     # Pantallas
     Key([mod, "shift"], "p", lazy.spawn("arandr")),
 
     # Audio
     Key([mod, "shift"], "a", lazy.spawn("pavucontrol")),
+
+    # Spotify
+    Key([mod], "s", lazy.spawn("microsoft-edge-dev --new-window https://open.spotify.com/")),
 
 
     # -------------------- Volume buttons --------------------
@@ -116,7 +124,7 @@ keys = [
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
 ]
 
-groups = [Group(i) for i in ["󰜫 Web", "  Src", " Code", " Dev", " Work", " Shell"]]
+groups = [Group(i) for i in ["󰜫 Web", "  Src", " Code", " Dev", " Work", " Shell", " ", " "]]
 
 for i, group in enumerate(groups):
     actual_key = str(i + 1)

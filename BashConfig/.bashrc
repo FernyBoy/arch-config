@@ -50,10 +50,13 @@ Search()
 }
 
 # Pacman
-alias Installed="pacman -Qe"
-alias AllInstalled="pacman -Q"
 alias Install="sudo pacman -S"
 alias Uninstall="sudo pacman -Rns"
+alias Installed="pacman -Qe"
+alias AllInstalled="pacman -Q"
+alias OrphanPackages="pacman -Qdt"
+alias KillOrphans="sudo pacman -Rns $(pacman -Qdtq)"
+alias ClearCache="sudo pacman -Sc"
 alias UpdatePgpKeys="sudo pacman-key --refresh-keys"
 alias DeleteSignatures="sudo rm -r /etc/pacman.d/gnupg"
 alias UpdateKeys="sudo pacman-key --init; sudo pacman-key --populate archlinux"
