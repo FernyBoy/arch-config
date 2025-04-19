@@ -20,10 +20,25 @@ alias DeepSeek="ollama run deepseek-r1:8b"
 alias Ciclo="cd /home/$USER/Repos/TareasUnison/2025-1"
 alias LaRamona="ssh ramona@10.10.235.245"
 alias fg="make clean; fg"
+alias mysql="mysql -u $USER -p"
 
 alias Screen120="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 120"
 alias Screen240="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 240"
 alias Screen480="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 480"
+
+# Battery
+# - Ahorro de energía
+alias battery-save='Screen120; sudo cpupower frequency-set -g powersave && echo "Modo ahorro activado 󱟟"'
+
+# - Rendimiento máximo
+alias full-power='Screen480; sudo cpupower frequency-set -g performance && echo "Modo rendimiento activado ⚡"'
+
+# - Balanceado (si quieres algo intermedio)
+alias balanced='Screen240; sudo cpupower frequency-set -g schedutil && echo "Modo balanceado activado 󰗑"'
+
+# - Ver estado actual
+alias cpu-status='cpupower frequency-info'
+
 
 # Screen
 SecondaryScreen=$(xrandr --query | grep -v "primary" | grep " connected" | awk '{print $1}')
@@ -39,6 +54,7 @@ alias DoubleScreen="xrandr --output eDP-1 --primary --mode 1920x1200 --pos 0x0 -
 alias ls='ls -lh --color=auto'
 alias c='clear'
 alias l='ls -a'
+alias route='pwd | xclip -selection clipboard'
 view()
 {
     viewnior "$@" &
@@ -54,7 +70,7 @@ alias Install="sudo pacman -S"
 alias Uninstall="sudo pacman -Rns"
 alias Installed="pacman -Qe"
 alias AllInstalled="pacman -Q"
-alias OrphanPackages="pacman -Qdt"
+alias ShowOrphans="pacman -Qdt"
 alias KillOrphans="sudo pacman -Rns $(pacman -Qdtq)"
 alias ClearCache="sudo pacman -Sc"
 alias UpdatePgpKeys="sudo pacman-key --refresh-keys"
@@ -161,6 +177,7 @@ styled_parse_git_branch() {
     awk '{printf "   \033[31m\033[97;41m 󰊢 %s \033[m\033[31m", $0}'
 }
 PS1='\n\[\033[34m\]\[\033[97;44m\] 󰟍 \u  \[\033[35m\]\[\033[97;45m\]  ${PWD#${PWD%/*/*/*}/} \[\033[0m\]\[\033[35m\]$(styled_parse_git_branch) \n\[\033[0m\]  '
+
 
 parse_git_branch() 
 {
