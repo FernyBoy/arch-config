@@ -22,16 +22,19 @@ alias LaRamona="ssh ramona@10.10.235.245"
 alias fg="make clean; fg"
 alias mysql="mysql -u $USER -p"
 
+alias reload-screen='sudo systemctl restart sddm'
+alias reload-inputs='sudo udevadm trigger --subsystem-match=usb --action=add'
+
 alias Screen120="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 120"
 alias Screen240="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 240"
 alias Screen480="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 480"
 
 # Battery
 # - Ahorro de energía
-alias battery-save='Screen120; sudo cpupower frequency-set -g powersave && echo "Modo ahorro activado 󱟟"'
+alias battery-save='Screen120; sudo cpupower frequency-set -g powersave && clear; echo "Modo ahorro activado 󱟟"'
 
 # - Rendimiento máximo
-alias full-power='Screen480; sudo cpupower frequency-set -g performance && echo "Modo rendimiento activado ⚡"'
+alias full-power='Screen480; sudo cpupower frequency-set -g performance && clear; echo "Modo rendimiento activado ⚡"'
 
 # - Balanceado (si quieres algo intermedio)
 alias balanced='Screen240; sudo cpupower frequency-set -g schedutil && echo "Modo balanceado activado 󰗑"'
