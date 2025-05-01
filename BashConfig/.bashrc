@@ -98,6 +98,9 @@ alias Time="sudo timedatectl set-time "
 alias Date="sudo timedatectl set-date "
 alias AutoAdjustTime="sudo timedatectl set-ntp true"
 
+# Django
+alias dj="django-admin"
+
 # Git
 alias gti="git init -b main"
 alias gta="git add"
@@ -168,25 +171,39 @@ edge()
     fi
 }
 
-alias NetBeans="~/Programs/NetBeans/ProgramFiles/bin/netbeans &"
-alias Discord="/home/Ferny/Programs/Discord/Discord &"
-
 # Bash
 alias Bash='nvim ~/.bashrc'
 alias RefreshBash="source /home/$USER/.bashrc"
 
-styled_parse_git_branch() {
+styled_parse_git_branch() 
+{
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\1/' | \
     awk '{printf "   \033[31m\033[97;41m 󰊢 %s \033[m\033[31m", $0}'
 }
-PS1='\n\[\033[34m\]\[\033[97;44m\] 󰟍 \u  \[\033[35m\]\[\033[97;45m\]  ${PWD#${PWD%/*/*/*}/} \[\033[0m\]\[\033[35m\]$(styled_parse_git_branch) \n\[\033[0m\]  '
+
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+styled_parse_venv() {
+    if [[ -n "$VIRTUAL_ENV" ]]; then
+        venv_name=$(basename "$VIRTUAL_ENV")
+        printf " \033[32m\033[97;42m  %s \033[m\033[32m" "$venv_name"
+    fi
+}
+
+PS1='\n\[\033[34m\]\[\033[97;44m\] 󰟍 \u  \[\033[35m\]\[\033[97;45m\]  ${PWD#${PWD%/*/*/*}/} \[\033[0m\]\[\033[35m\]$(styled_parse_git_branch)$(styled_parse_venv) \n\[\033[0m\]  '
 
 
 parse_git_branch() 
 {
     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ 󰊢 \1/'
 }
-PS2='\[\033[01;34m\]󰟍 \u \[\033[01;35m\]  ${PWD#${PWD%/*/*/*}/}\[\033[01;31m\] $(parse_git_branch) \[\033[00m\] \n '
+
+parse_venv() {
+    if [[ -n "$VIRTUAL_ENV" ]]; then
+        echo -e " \033[32m $(basename "$VIRTUAL_ENV")\033[0m"
+    fi
+}
+
+PS2='\[\033[01;34m\]󰟍 \u \[\033[01;35m\]  ${PWD#${PWD%/*/*/*}/}\[\033[01;31m\] $(parse_git_branch) $(parse_venv) \[\033[00m\] \n '
 
 
 PATH=~/.console-ninja/.bin:$PATH
