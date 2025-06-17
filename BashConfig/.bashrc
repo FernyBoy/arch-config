@@ -12,15 +12,19 @@ fi
 export MANPATH=/usr/local/texlive/2024/texmf-dist/doc/man:$MANPATH
 export INFOPATH=/usr/local/texlive/2024/texmf-dist/doc/info:$INFOPATH
 export PATH=/usr/local/texlive/2024/bin/x86_64-linux:$PATH
+export PATH=$HOME/bin:$PATH
 
-#Ma shit
+# Ma shit
 alias shit='shutdown now'
 alias ohshit="reboot"
 alias DeepSeek="ollama run deepseek-r1:8b"
 alias Ciclo="cd /home/$USER/Repos/TareasUnison/2025-1"
-alias LaRamona="ssh ramona@10.10.235.245"
 alias fg="make clean; fg"
 alias mysql="mysql -u $USER -p"
+
+# Servers
+alias Ramona="ssh ramona@10.10.196.11"
+alias Furiosa="ssh ferny@proyectoscc.unison.mx"
 
 alias reload-screen='sudo systemctl restart sddm'
 alias reload-inputs='sudo udevadm trigger --subsystem-match=usb --action=add'
@@ -74,7 +78,7 @@ alias Uninstall="sudo pacman -Rns"
 alias Installed="pacman -Qe"
 alias AllInstalled="pacman -Q"
 alias ShowOrphans="pacman -Qdt"
-alias KillOrphans="sudo pacman -Rns $(pacman -Qdtq)"
+alias KillOrphans="sudo pacman -Rns $(pacman -Qtdq)"
 alias ClearCache="sudo pacman -Sc"
 alias UpdatePgpKeys="sudo pacman-key --refresh-keys"
 alias DeleteSignatures="sudo rm -r /etc/pacman.d/gnupg"
@@ -189,7 +193,15 @@ styled_parse_venv() {
     fi
 }
 
-PS1='\n\[\033[34m\]\[\033[97;44m\] 󰟍 \u  \[\033[35m\]\[\033[97;45m\]  ${PWD#${PWD%/*/*/*}/} \[\033[0m\]\[\033[35m\]$(styled_parse_git_branch)$(styled_parse_venv) \n\[\033[0m\]  '
+export CONDA_CHANGEPS1=false
+styled_parse_conda() {
+    if [[ -n "$CONDA_DEFAULT_ENV" && -z "$VIRTUAL_ENV" ]]; then
+        conda_env_name=$(basename "$CONDA_DEFAULT_ENV")
+        printf  " \033[36m\033[97;46m  %s \033[m\033[36m" "$conda_env_name"
+    fi
+}
+
+PS1='\n\[\033[34m\]\[\033[97;44m\] 󰟍 \u  \[\033[35m\]\[\033[97;45m\]  ${PWD#${PWD%/*/*/*}/} \[\033[0m\]\[\033[35m\]$(styled_parse_git_branch)$(styled_parse_venv)$(styled_parse_conda) \n\[\033[0m\]  '
 
 
 parse_git_branch() 
@@ -203,7 +215,20 @@ parse_venv() {
     fi
 }
 
-PS2='\[\033[01;34m\]󰟍 \u \[\033[01;35m\]  ${PWD#${PWD%/*/*/*}/}\[\033[01;31m\] $(parse_git_branch) $(parse_venv) \[\033[00m\] \n '
+parse_conda() {
+    if [[ -n "$CONDA_DEFAULT_ENV" && -z "$VIRTUAL_ENV" ]]; then
+        echo -e " \033[36m $(basename "$CONDA_DEFAULT_ENV")\033[0m"
+    fi
+}
+
+PS2='\[\033[01;34m\]󰟍 \u \[\033[01;35m\]  ${PWD#${PWD%/*/*/*}/}\[\033[01;31m\] $(parse_git_branch)$(parse_venv)$(parse_conda) \[\033[00m\] \n '
+
+
+# Inicializar conda si no está ya inicializado
+if [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
+    . "$HOME/miniconda3/etc/profile.d/conda.sh"
+fi
+
 
 
 PATH=~/.console-ninja/.bin:$PATH
@@ -213,3 +238,6 @@ export PATH="$PATH:/home/Ferny/.local/bin"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+source ~/anaconda3/etc/profile.d/conda.sh
