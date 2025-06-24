@@ -83,7 +83,7 @@ alias ClearCache="sudo pacman -Sc"
 alias UpdatePgpKeys="sudo pacman-key --refresh-keys"
 alias DeleteSignatures="sudo rm -r /etc/pacman.d/gnupg"
 alias UpdateKeys="sudo pacman-key --init; sudo pacman-key --populate archlinux"
-alias SystemUpdate="DeleteSignatures; UpdateKeys; sudo pacman -Sy -y; sudo pacman -Syu -y"
+alias SystemUpdate="DeleteSignatures; UpdateKeys; sudo pacman -Syu"
 alias OpenMirrors="cd /etc/pacman.d/"
 
 # Qtile System Emergency
