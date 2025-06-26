@@ -97,6 +97,9 @@ keys = [
 
     # Audio
     Key([mod, "shift"], "a", lazy.spawn("pavucontrol")),
+    
+    # WhatsApp
+    Key([mod, "shift"], "w", lazy.spawn("microsoft-edge-dev --new-window https://web.whatsapp.com/")),
 
     # Spotify
     Key([mod], "s", lazy.spawn("microsoft-edge-dev --new-window https://open.spotify.com/")),
@@ -124,7 +127,7 @@ keys = [
     Key([], "XF86MonBrightnessDown", lazy.spawn("brightnessctl set 10%-")),
 ]
 
-groups = [Group(i) for i in ["󰜫 Web", "  Src", " Code", " Dev", " Work", " Shell", " ", " "]]
+groups = [Group(i) for i in ["󰜫 Web", "  Src", " Code", " Dev", " Work", " Shell", "󰍡 ", " ", " "]]
 
 for i, group in enumerate(groups):
     actual_key = str(i + 1)
@@ -173,7 +176,7 @@ screens = [
                 widget.GroupBox(
                     foreground=['#FFFFFF', '#FFFFFF'],
                     background=['#202020', '#202020'],
-                    font='JetBraindMonoNerdFont',
+                    font='JetBrainsMono Nerd Font',
                     fontsize=15,
                     margin_y=2,
                     margin_x=5,
@@ -244,16 +247,18 @@ screens = [
                 widget.TextBox(
                     fontsize=15,
                     padding=15,
-                    text="הּ"),
+                    text="󰘵"),
+                # widget.Prompt(),
                 widget.WindowName(
                     fontsize=15,
                 ),
                 # widget.StatusNotifier(),
+                widget.Systray(),
                 widget.Clock(
                     fontsize=14,
                     background=['#202020', '#202020'],
                     padding=15,
-                    format=" %d / %m / %Y  﩮 %A   %I:%M %p"
+                    format=" %d / %m / %Y  󰕯 %A   %I:%M %p"
                 ),
             ],
             25,
