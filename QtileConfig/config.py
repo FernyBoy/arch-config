@@ -69,7 +69,8 @@ keys = [
     # Terminal
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
 
-    Key([mod, "control"], "Return", lazy.spawn("alacritty --working-directory $(pwd)")),
+    # Calculator
+    Key([mod], "c", lazy.spawn("gnome-calculator"), desc="Launc calculator"),
 
     # Explorer
     Key([mod], "e", lazy.spawn("thunar")),
@@ -80,7 +81,7 @@ keys = [
     Key([mod, "shift"], "b", lazy.spawn("microsoft-edge-dev --inprivate")),
 
     # VsCode
-    Key([mod], "c", lazy.spawn("code")),
+    Key([mod], "v", lazy.spawn("code")),
 
     # Rofi
     Key([mod], "m", lazy.spawn("rofi -show-icons -show drun")),
