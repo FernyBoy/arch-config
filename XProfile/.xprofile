@@ -1,7 +1,7 @@
 feh --bg-scale Images/Walls/HorizonHouse.png &
 picom & 
+volumeicon &
 pulseaudio &
 nm-applet &
-volumeicon &
 cbatticon &
 autokey-gtk &

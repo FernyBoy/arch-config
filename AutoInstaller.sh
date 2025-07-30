@@ -8,6 +8,11 @@ cd ./Assets
 ./AssetsInstaller.sh
 cd ../
 
+# Autokey installer
+cd ./Autokey
+./AutokeyInstaller.sh
+cd ../
+
 # Bash installer
 cd ./BashConfig
 ./BashInstaller.sh
