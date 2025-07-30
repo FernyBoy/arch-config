@@ -1,0 +1,4 @@
+# Focus mode
+alias Focus-on="sudo cp /home/Ferny/.config/Bash/Hosts/Focus/hosts /etc/"
+alias Focus-off="sudo cp /home/Ferny/.config/Bash/Hosts/Normal/hosts /etc/"
+

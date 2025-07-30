@@ -1,0 +1,26 @@
+# Navigation
+alias ls='ls -lh --color=auto'
+
+alias c='clear'
+
+alias l='ls -a'
+
+alias du="du -h"
+
+alias route='pwd | xclip -selection clipboard'
+
+alias Bash='nvim ~/.bashrc'
+
+alias RefreshBash="source /home/$USER/.bashrc"
+
+alias Extract="tar -zxvf"
+
+view()
+{
+    viewnior "$@" &
+}
+
+Search()
+{
+    history | grep "$@"
+}

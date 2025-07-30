@@ -1,0 +1,22 @@
+# ----------------------- #
+# --- Normal terminal --- #
+# ----------------------- #
+parse_git_branch() 
+{
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ 󰊢 \1/'
+}
+
+parse_venv() {
+    if [[ -n "$VIRTUAL_ENV" ]]; then
+        echo -e " \033[32m $(basename "$VIRTUAL_ENV")\033[0m"
+    fi
+}
+
+parse_conda() {
+    if [[ -n "$CONDA_DEFAULT_ENV" && -z "$VIRTUAL_ENV" ]]; then
+        echo -e " \033[36m $(basename "$CONDA_DEFAULT_ENV")\033[0m"
+    fi
+}
+
+PS2='\[\033[01;34m\]󰟍 \u \[\033[01;35m\]  ${PWD#${PWD%/*/*/*}/}\[\033[01;31m\] $(parse_git_branch)$(parse_venv)$(parse_conda) \[\033[00m\] \n '
+

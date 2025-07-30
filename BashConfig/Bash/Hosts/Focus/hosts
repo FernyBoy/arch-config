@@ -1,0 +1,16 @@
+# Static table lookup for hostnames.
+# See hosts(5) for details.
+
+127.0.0.1	localhost
+::1		    localhost
+127.0.1.1	Alien-FX.localhost Alien-FX
+
+0.0.0.0     www.facebook.com
+0.0.0.0     www.instagram.com
+0.0.0.0     www.twitch.tv
+0.0.0.0     www.amazon.com
+
+0.0.0.0     https://www.facebook.com
+0.0.0.0     https://www.instagram.com
+0.0.0.0     https://www.twitch.tv
+0.0.0.0     https://www.amazon.com

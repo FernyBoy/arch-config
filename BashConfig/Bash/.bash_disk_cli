@@ -1,0 +1,8 @@
+# Disks cli
+alias ShowDisks="udisksctl status"
+
+alias OpenDisks="cd /run/media/$USER"
+
+alias MountDisk="udisksctl mount -b "
+
+alias UnmountDisk="udisksctl unmount -b "

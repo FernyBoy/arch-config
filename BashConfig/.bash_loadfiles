@@ -1,0 +1,13 @@
+
+
+
+# --------------- Files loader --------------- #
+
+for file in "$HOME/.config/Bash"/.bash_*; do
+    [ -f "$file" ] && source "$file"
+done
+
+# -------------------------------------------- #
+
+
+

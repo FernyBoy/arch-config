@@ -1,0 +1,9 @@
+# Screen
+alias reload-screen='sudo systemctl restart sddm'
+alias reload-inputs='sudo udevadm trigger --subsystem-match=usb --action=add'
+
+alias Screen120="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 120"
+alias Screen240="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 240"
+alias Screen480="xrandr --output eDP-1 --primary --mode 1920x1200 --rate 480"
+
+alias DoubleScreen="xrandr --output eDP-1 --primary --mode 1920x1200 --pos 0x0 --rotate normal --output HDMI-1-0 --mode 1920x1080 --pos 1920x0 --rotate normal; feh --bg-scale Images/Walls/HorizonHouse.png &"

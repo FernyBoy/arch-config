@@ -1,0 +1,6 @@
+# Time
+alias Time="sudo timedatectl set-time "
+
+alias Date="sudo timedatectl set-date "
+
+alias AutoAdjustTime="sudo timedatectl set-ntp true"

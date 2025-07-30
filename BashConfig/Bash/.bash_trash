@@ -1,0 +1,6 @@
+# Trash
+alias EmptyTrash="trash-empty"
+
+alias RestoreSingleFile="trash-restore"
+
+alias Trash="trash"

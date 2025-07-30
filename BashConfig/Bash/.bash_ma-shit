@@ -1,0 +1,12 @@
+# Ma shit
+alias shit='shutdown now'
+
+alias ohshit="reboot"
+
+alias Gemini="npx https://github.com/google-gemini/gemini-cli"
+
+alias DeepSeek="ollama run deepseek-r1:8b"
+
+alias Ciclo="cd /home/$USER/Repos/TareasUnison/2025-2"
+
+alias mysql="mysql -u $USER -p"

@@ -1,0 +1,10 @@
+edge() 
+{
+    if [[ "$1" == "private" ]]; then
+        shift  # Elimina "private" de los argumentos
+        microsoft-edge-dev "$@" --new-window --inprivate &
+    else
+        microsoft-edge-dev "$@" --new-window &
+    fi
+}
+

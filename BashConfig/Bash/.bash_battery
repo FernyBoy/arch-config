@@ -1,0 +1,13 @@
+# Battery
+# - Ahorro de energía
+alias battery-save='Screen120; sudo cpupower frequency-set -g powersave && clear; echo "Modo ahorro activado 󱟟"'
+
+# - Rendimiento máximo
+alias full-power='Screen480; sudo cpupower frequency-set -g performance && clear; echo "Modo rendimiento activado ⚡"'
+
+# - Balanceado (si quieres algo intermedio)
+alias balanced='Screen240; sudo cpupower frequency-set -g schedutil && echo "Modo balanceado activado 󰗑"'
+
+# - Ver estado actual
+alias cpu-status='cpupower frequency-info'
+
