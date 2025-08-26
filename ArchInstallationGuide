@@ -43,11 +43,10 @@ timedatectl set-ntp true
 
 lsblk
 mkfs.ext4 /dev/<particion_raiz>
-mkfs.ext4 /dev/<particion_secundaria>
 mkswap /dev/<particion_swap>
 swapon /dev/<particion_swap>
 mount /dev/<particion_raiz> /mnt
-mount --mkdir /dev/<particion_efi> /mnt/boot
+mount --mkdir /dev/<particion_efi> /mnt/boot/efi
 
 # Instalar sistema
 
@@ -59,11 +58,11 @@ genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
 ln -sf /usr/share/zoneinfo/America/Phoenix /etc/localtime
 hwclock --systohc
-pacman -S vim
+pacman -S nvim
 vim /etc/locale.gen  # Buscar en_US.UTF-8 UTF-8 y es_MX.UTF-8 UTF-8
 locale-gen
 echo "LANG=en_US.UTF-8" > /etc/locale.conf
-echo "KEYMAP=en" > /etc/vconsole.conf
+echo "KEYMAP=us" > /etc/vconsole.conf
 echo "<nombre_host>" > /etc/hostname
 vim /etc/hosts
 
@@ -83,10 +82,10 @@ systemctl enable NetworkManager
 pacman -S grub efibootmgr
 grub-install /dev/<disco_raiz>
 pacman -S os-prober
-sudo vim /etc/default/grub # Descomenta "GRUB_DISABLE_OS_PROBER=false"
+nvim /etc/default/grub # Descomenta "GRUB_DISABLE_OS_PROBER=false"
 grub-mkconfig -o /boot/grub/grub.cfg
 os-prober
-update-grub
+grub-mkconfig -o /boot/grub/grub.cfg
 
 # Agregar usuario
 useradd -m <usuario>
@@ -133,7 +132,6 @@ sudo systemctl enable sddm
 
 # Activa los servicios de audio
 systemctl --user enable --now pipewire.service pipewire.socket wireplumber.service
-systemctl --user enable --now pipewire pipewire-pulse wireplumber
 
 # -----------------------------
 # Al inicio de sddm, debes cambiar de Qtile(Wayland) a Qtile
