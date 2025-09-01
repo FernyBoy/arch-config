@@ -144,7 +144,7 @@ systemctl --user enable --now pipewire.service pipewire.socket wireplumber.servi
 # Realiza todos los cambios necesarios utilizando "lxappearance"
 
 # Cambia el nombre y el orden de windows en el archivo /boot/grub/grub.cfg
-vim /boot/grub/grub.cfg
+nvim /boot/grub/grub.cfg
 
 # Instala el estilo del grub
 cd /home/$USER/Docs/grub-config/argon-grub-theme-3.2.2

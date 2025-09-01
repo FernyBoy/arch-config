@@ -4,7 +4,6 @@ sudo mv Nordic-cursors /usr/share/icons
 cd ../
 
 cd ./Icons
-unzip BlackoutIcons.zip
 sudo mv BlackoutIcons /usr/share/icons
 cd ../
 
@@ -18,3 +17,6 @@ sudo cp Fonts/*.otf /usr/share/fonts/
 
 mkdir -p /home/$USER/Images/Walls
 cp /*.png /home/$USER/Images/Walls
+
+
+echo GRUB_THEME="/boot/grub/themes/minegrub-world-selection/theme.txt" >> /etc/default/grub
