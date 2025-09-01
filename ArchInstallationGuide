@@ -130,6 +130,10 @@ sudo ./AutoInstaller.sh
 # Activa el sddm
 sudo systemctl enable sddm
 
+# Activa better lock screen
+sudo systemctl enable betterlockscreen
+betterlockscreen -u /home/$USER/Images/Walls/DarkOcean.png
+
 # Activa los servicios de audio
 systemctl --user enable --now pipewire.service pipewire.socket wireplumber.service
 

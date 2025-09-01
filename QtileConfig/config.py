@@ -35,7 +35,7 @@ terminal = guess_terminal()
 
 keys = [
     # -------------------- Locker --------------------
-    Key([mod], "l", lazy.spawn("i3lock -c 000000"), desc="Lock the screen"),
+    Key([mod], "l", lazy.spawn("betterlockscreen -l"), desc="Lock the screen"),
 
 
     # -------------------- Windows management --------------------

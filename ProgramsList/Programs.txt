@@ -3,6 +3,7 @@ arandr
 autokey-gtk
 base
 base-devel
+betterlockscreen
 blueman
 brightnessctl
 cbatticon
@@ -19,7 +20,6 @@ gnome-calculator
 grub
 grub-theme-minegrub-world-selection-git
 htop
-i3lock
 linux
 linux-firmware
 lxappearance
