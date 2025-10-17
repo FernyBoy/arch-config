@@ -1,0 +1,8 @@
+# Yay
+alias UpdateYay="makepkg -si /opt/yay-git"
+
+alias YayUpdates="yay -Syu -y"
+
+alias UpdateCode="yay -S visual-studio-code-bin"
+
+alias UpdateEdge="yay -S microsoft-edge-dev-bin"
