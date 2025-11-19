@@ -1,9 +1,9 @@
 # Navigation
-alias ls='ls -lh --color=auto'
+alias ls='lsd -lh --group-directories-first --color=auto'
 
 alias c='clear'
 
-alias l='ls -a'
+alias l='lsd -alh --group-directories-first'
 
 alias du="du -h"
 
