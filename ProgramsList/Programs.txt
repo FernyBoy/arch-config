@@ -7,6 +7,7 @@ betterlockscreen
 blueman
 brightnessctl
 cbatticon
+celluloid
 dbus
 efibootmgr
 feh
