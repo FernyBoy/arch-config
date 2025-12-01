@@ -10,3 +10,4 @@ y = 5
 
 [font]
 normal = { family = "JetBrainsMonoNerdFont", style = "regular" }
+size = 9

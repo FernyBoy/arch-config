@@ -48,10 +48,8 @@ cd ./SDDM
 ./InstallSddmTheme.sh
 cd ../
 
-# Nvim installer
-cd ./Nvim
-./NvimInstaller.sh
-cd ../
+# Neovim config
+git clone https://github.com/FernyBoy/nvim-config.git /home/$USER/.config/nvim
 
 # XProfile installer
 cd ./XProfile

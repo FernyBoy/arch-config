@@ -12,11 +12,13 @@ tar -xf Fluent-round-dark.tar.xz
 sudo mv Fluent-round-dark /usr/share/themes
 cd ../
 
-sudo cp Fonts/*.ttf /usr/share/fonts/
-sudo cp Fonts/*.otf /usr/share/fonts/
+cd ./Fonts
+sudo cp ./* /usr/share/fonts/
+cd ../
 
+cd ./Walls
 mkdir -p /home/$USER/Images/Walls
-cp /*.png /home/$USER/Images/Walls
+cp ./* /home/$USER/Images/Walls
+cd ../
 
-
-echo GRUB_THEME="/boot/grub/themes/minegrub-world-selection/theme.txt" >> /etc/default/grub
+sudo echo GRUB_THEME="/boot/grub/themes/minegrub-world-selection/theme.txt" >> /etc/default/grub
