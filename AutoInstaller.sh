@@ -30,7 +30,7 @@ cd ../
 
 # Programs installer
 cd ./ProgramsList
-./ProgramsInstaller.sh Programs.txt
+./ProgramsInstaller.sh
 cd ../
 
 # Qtile installer

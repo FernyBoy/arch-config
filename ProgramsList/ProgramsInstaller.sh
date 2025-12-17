@@ -5,30 +5,30 @@
 set -euo pipefail
 
 # --- Constantes ---
-readonly INPUT_FILE="$1"
-readonly FAILED_PACKAGES_LOG="notInstalled.txt"
+readonly INPUT_FILE="./programs_list"
+readonly FAILED_PACKAGES_LOG="notInstalled"
 
 # --- Verificaciones Iniciales ---
 
 # 1. Verificar que se proporcionó un archivo como argumento.
-if [ $# -ne 1 ]; then
-  echo "Uso: $0 <ruta/al/archivo/de/paquetes>"
-  exit 1
-fi
+# if [ $# -ne 1 ]; then
+#  echo "Uso: $0 <ruta/al/archivo/de/paquetes>"
+#  exit 1
+# fi
 
-# 2. Verificar que el archivo de entrada existe.
+# 1. Verificar que el archivo de entrada existe.
 if [ ! -f "$INPUT_FILE" ]; then
   echo "Error: El archivo '$INPUT_FILE' no fue encontrado."
   exit 1
 fi
 
-# 3. Verificar que 'yay' está instalado.
+# 2. Verificar que 'yay' está instalado.
 if ! command -v yay &> /dev/null; then
   echo "Error: 'yay' no está instalado. Por favor, instálalo para continuar."
   exit 1
 fi
 
-# 4. Prevenir la ejecución como root (yay no lo permite).
+# 3. Prevenir la ejecución como root (yay no lo permite).
 if [ "$EUID" -eq 0 ]; then
   echo "Error: No ejecutes este script como root o con sudo. 'yay' pedirá la contraseña cuando sea necesario."
   exit 1
