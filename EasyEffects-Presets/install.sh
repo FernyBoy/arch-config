@@ -114,6 +114,7 @@ install_presets() {
 
 check_installation
 check_impulse_response_directory
-install_menu
-read_choice
+# install_menu
+# read_choice
+CHOICE=1
 install_presets

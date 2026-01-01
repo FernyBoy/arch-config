@@ -149,16 +149,6 @@ sudo ./AutoInstaller.sh
 
 
 
-# Activa el sddm
-sudo systemctl enable sddm
-
-
-
-# Activa los servicios de audio
-sudo systemctl --user enable --now pipewire.service pipewire.socket wireplumber.service
-
-
-
 # ---------------------------------------------------------- #
 # Al inicio de sddm, debes cambiar de Qtile(Wayland) a Qtile
 # ---------------------------------------------------------- #
@@ -176,7 +166,3 @@ nvim /boot/grub/grub.cfg
 
 # Instala el estilo del grub modificando el archivo /etc/default/grub y agregando la siguiente linea
 GRUB_THEME="/boot/grub/themes/minegrub-world-selection/theme.txt
-
-
-
-# Instala los pressets de easyeffects con el archivo de instalacion que se encuentra en Easyeffects/
