@@ -220,4 +220,3 @@ sudo ./AutoInstaller.sh
 ## Notas finales
 - Al inicio de sddm, debes cambiar de Qtile(Wayland) a Qtile
 - Puedes cambiar el orden de los sistemas en **/boot/grub/grub.cfg**
-- Instala el estilo del grub modificando el archivo **/etc/default/grub** agregando la siguiente linea: GRUB_THEME="/boot/grub/themes/minegrub-world-selection/theme.txt

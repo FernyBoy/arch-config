@@ -37,40 +37,56 @@ run_module()
     cd "${BASE_DIR}"
 }
 
+
+
 # ----------------------------------------------------------
 # Terminal
 # ----------------------------------------------------------
 run_module "Alacritty" "AlacrittyInstaller.sh" "Instalando terminal (Alacritty)"
+
+
 
 # ----------------------------------------------------------
 # Assets visuales (fuentes, iconos, cursores, temas, wallpapers)
 # ----------------------------------------------------------
 run_module "Assets" "AssetsInstaller.sh" "Instalando assets visuales"
 
+
+
 # ----------------------------------------------------------
 # Automatización de teclado
 # ----------------------------------------------------------
 run_module "Autokey" "AutokeyInstaller.sh" "Instalando AutoKey"
+
+
 
 # ----------------------------------------------------------
 # Shell (Bash)
 # ----------------------------------------------------------
 run_module "BashConfig" "BashInstaller.sh" "Configurando Bash"
 
+
+
 # ----------------------------------------------------------
 # Audio (PipeWire + EasyEffects)
 # ----------------------------------------------------------
 run_module "EasyEffects-Presets" "install.sh" "Configurando audio y presets de EasyEffects"
+
+
 
 # ----------------------------------------------------------
 # Mirrors
 # ----------------------------------------------------------
 run_module "Mirrors" "MirrorsInstaller.sh" "Configurando mirrors de pacman"
 
+
+
 # ----------------------------------------------------------
 # Compositor
 # ----------------------------------------------------------
 run_module "Picom" "PicomInstaller.sh" "Instalando y configurando Picom"
+
+
 
 # ----------------------------------------------------------
 # Paquetes base y servicios
@@ -82,20 +98,28 @@ echo "Habilitando servicios del sistema"
 sudo systemctl enable sddm
 sudo systemctl --user enable --now pipewire.service pipewire.socket wireplumber.service
 
+
+
 # ----------------------------------------------------------
 # Window Manager
 # ----------------------------------------------------------
 run_module "QtileConfig" "QtileInstaller.sh" "Configurando Qtile"
+
+
 
 # ----------------------------------------------------------
 # Launcher
 # ----------------------------------------------------------
 run_module "Rofi" "RofiThemeInstaller.sh" "Instalando tema de Rofi"
 
+
+
 # ----------------------------------------------------------
 # Display Manager
 # ----------------------------------------------------------
 run_module "SDDM" "InstallSddmTheme.sh" "Instalando y configurando SDDM"
+
+
 
 # ----------------------------------------------------------
 # Neovim
@@ -107,10 +131,35 @@ echo "=================================================="
 
 git clone https://github.com/FernyBoy/nvim-config.git /home/$USER/.config/nvim
 
+
+
 # ----------------------------------------------------------
 # Variables de entorno X11
 # ----------------------------------------------------------
 run_module "XProfile" "XProfileInstaller.sh" "Configurando XProfile"
+
+
+
+# ----------------------------------------------------------
+# Configuración del tema de GRUB
+# ----------------------------------------------------------
+echo
+echo "=================================================="
+echo ">> Configurando GRUB"
+echo "=================================================="
+
+GRUB_THEME_LINE='GRUB_THEME="/boot/grub/themes/minegrub-world-selection/theme.txt"'
+
+if grep -q '^GRUB_THEME=' /etc/default/grub; then
+    sed -i "s|^GRUB_THEME=.*|$GRUB_THEME_LINE|" /etc/default/grub
+else
+    echo "$GRUB_THEME_LINE" >> /etc/default/grub
+fi
+
+echo ">> Regenerando configuración de GRUB"
+grub-mkconfig -o /boot/grub/grub.cfg
+
+
 
 echo
 echo "=================================================="
