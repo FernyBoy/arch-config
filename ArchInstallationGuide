@@ -1,8 +1,9 @@
-# Conexión Inalámbrica
-
 loadkeys us # Para inglés
 loadkeys la-latin1 # Para español
 
+
+
+# Conexión Inalámbrica
 iwctl
 device list
 station <NOMBRE_DISPOSITIVO> scan
@@ -12,7 +13,7 @@ station <NOMBRE_DISPOSITIVO> connect <NOMBRE_ROUTER>
 ########## En caso de ser una red privada ########## Los ejemplos utilizados son para la red de la Unison
 # Crear en la carpeta /etc/iwd el archivo main.conf
 cd /etc/iwd
-vim main.conf
+nvim main.conf
 # Escribir 
 [General]
 EnableNetworkConfiguration=true
@@ -20,7 +21,7 @@ EnableNetworkConfiguration=true
 
 # Crear en la carpeta /var/lib/iwd el archivo <Nombre de la red>.<Tipo de seguridad>
 cd /var/lib/iwd
-vim <nombre de la red>.<tipo de seguridad> (UniSon.8021x)
+nvim <nombre de la red>.<tipo de seguridad> (UniSon.8021x)
 # Escribir 
 [Security]
 EAP-Method=<Metodo>(PEAP)
@@ -39,8 +40,9 @@ exit
 ping archlinux.org
 timedatectl set-ntp true
 
-# Crear y formatear particiones
 
+
+# Crear y formatear particiones
 lsblk
 mkfs.ext4 /dev/<particion_raiz>
 mkswap /dev/<particion_swap>
@@ -48,13 +50,15 @@ swapon /dev/<particion_swap>
 mount /dev/<particion_raiz> /mnt
 mount --mkdir /dev/<particion_efi> /mnt/boot/efi
 
-# Instalar sistema
 
+
+# Instalar sistema
 pacstrap /mnt base linux linux-firmware
 genfstab -U /mnt >> /mnt/etc/fstab
 
-# Configurar sistema
 
+
+# Configurar sistema
 arch-chroot /mnt
 ln -sf /usr/share/zoneinfo/America/Phoenix /etc/localtime
 hwclock --systohc
@@ -64,7 +68,7 @@ locale-gen
 echo "LANG=en_US.UTF-8" > /etc/locale.conf
 echo "KEYMAP=us" > /etc/vconsole.conf
 echo "<nombre_host>" > /etc/hostname
-vim /etc/hosts
+nvim /etc/hosts
 
 # Escribir en el archivo hosts
 "
@@ -73,10 +77,14 @@ vim /etc/hosts
 127.0.1.1   <Pc Name>.localhost <Pc Name>
 "
 
+
+
 # Network manager
 passwd
 pacman -S networkmanager
 systemctl enable NetworkManager
+
+
 
 # Grub
 pacman -S grub efibootmgr
@@ -87,13 +95,15 @@ grub-mkconfig -o /boot/grub/grub.cfg
 os-prober
 grub-mkconfig -o /boot/grub/grub.cfg
 
+
+
 # Agregar usuario
 useradd -m <usuario>
 passwd <usuario>
 usermod -aG wheel,audio,video,storage <usuario>
 pacman -S sudo
 
-vim /etc/sudoers
+nvim /etc/sudoers
 # En el archivo "sudoers" busca:
 "Uncomment to allow members of group wheel to execute any command"
 # Y descomenta:
@@ -103,16 +113,24 @@ exit
 umount -R /mnt
 shutdown now
 
+
+
 # Sacar USB y arrancar PC
+
+
 
 # Conectarse a una red wifi con NetworkManager
 nmcli device wifi list
 sudo nmcli device wifi connect <nombre_red> password <password>
 ping archlinux.org
 
+
+
 # Clona el siguiente repositorio
 sudo pacman -S git
 git clone https://github.com/FernyBoy/arch-config.git
+
+
 
 # Instala yay con el archivo incluido
 ./YayInstaller/yayInstaller.sh
@@ -124,28 +142,41 @@ cd yay-git
 sudo pacman -S --needed git base-devel
 makepkg -si
 
+
+
 # Ejecuta el auto installer
 sudo ./AutoInstaller.sh
+
+
 
 # Activa el sddm
 sudo systemctl enable sddm
 
-# Activa better lock screen
-sudo systemctl enable betterlockscreen
-betterlockscreen -u /home/$USER/Images/Walls/DarkOcean.png
+
 
 # Activa los servicios de audio
-systemctl --user enable --now pipewire.service pipewire.socket wireplumber.service
+sudo systemctl --user enable --now pipewire.service pipewire.socket wireplumber.service
 
-# -----------------------------
+
+
+# ---------------------------------------------------------- #
 # Al inicio de sddm, debes cambiar de Qtile(Wayland) a Qtile
-# -----------------------------
+# ---------------------------------------------------------- #
+
+
 
 # Realiza todos los cambios necesarios utilizando "lxappearance"
+
+
 
 # Cambia el nombre y el orden de windows en el archivo /boot/grub/grub.cfg
 nvim /boot/grub/grub.cfg
 
-# Instala el estilo del grub
-cd /home/$USER/Docs/grub-config/argon-grub-theme-3.2.2
-sudo ./install.sh --install --resolution 1920x1080 --background Night --fontsize 16
+
+
+# Instala el estilo del grub modificando el archivo /etc/default/grub y agregando la siguiente linea
+GRUB_THEME="/boot/grub/themes/minegrub-world-selection/theme.txt
+
+
+
+# Instala los pressets de easyeffects con el archivo de instalacion que se encuentra en Easyeffects/

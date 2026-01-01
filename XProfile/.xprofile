@@ -1,4 +1,5 @@
-feh --bg-scale Images/Walls/HorizonHouse.png &
+feh --bg-scale Images/Walls/DarkWaves.png &
+easyeffects --gapplication-service &
 picom & 
 volumeicon &
 pulseaudio &

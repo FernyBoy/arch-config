@@ -9,7 +9,9 @@ brightnessctl
 cbatticon
 celluloid
 dbus
+discord
 efibootmgr
+easyeffects
 feh
 ferdium
 flameshot
@@ -25,7 +27,7 @@ linux
 linux-firmware
 lsd
 lxappearance
-microsoft-edge-dev-bin
+microsoft-edge-stable-bin
 mingw-w64-gcc
 neovim
 network-manager-applet
