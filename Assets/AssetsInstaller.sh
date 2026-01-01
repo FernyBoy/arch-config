@@ -1,22 +1,45 @@
-cd ./Cursor
+#!/bin/bash
+
+set -e
+
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+cd "$SCRIPT_DIR"
+
+echo "Instalando assets del sistema..."
+
+# ---------- Cursores ----------
+echo "Instalando cursores..."
+cd Cursor
 tar -xf Nordic-cursors.tar.xz
-sudo cp Nordic-cursors /usr/share/icons
-cd ../
+sudo cp -r Nordic-cursors /usr/share/icons/
+cd ..
 
-cd ./Icons
-sudo cp BlackoutIcons /usr/share/icons
-cd ../
+# ---------- Iconos ----------
+echo "Instalando iconos..."
+cd Icons
+sudo cp -r BlackoutIcons /usr/share/icons/
+cd ..
 
-cd ./Theme
+# ---------- Temas ----------
+echo "Instalando temas..."
+cd Theme
 tar -xf Fluent-round-dark.tar.xz
-sudo cp Fluent-round-dark /usr/share/themes
-cd ../
+sudo cp -r Fluent-round-dark /usr/share/themes/
+cd ..
 
-cd ./Fonts
-sudo cp ./* /usr/share/fonts/
-cd ../
+# ---------- Fuentes ----------
+echo "Instalando fuentes..."
+FONT_DIR="/usr/share/fonts/custom"
+sudo mkdir -p "$FONT_DIR"
+sudo cp -r Fonts/* "$FONT_DIR/"
 
-cd ./Walls
-mkdir -p /home/$USER/Images/Walls
-cp ./* /home/$USER/Images/Walls
-cd ../
+echo "Actualizando caché de fuentes..."
+sudo fc-cache -fv
+
+# ---------- Wallpapers ----------
+echo "Instalando wallpapers..."
+WALL_DIR="$HOME/Images/Walls"
+mkdir -p "$WALL_DIR"
+cp -r Walls/* "$WALL_DIR/"
+
+echo "Assets instalados correctamente."
