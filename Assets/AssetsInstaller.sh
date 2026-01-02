@@ -38,5 +38,6 @@ echo "Instalando wallpapers..."
 WALL_DIR="$HOME/Images/Walls"
 mkdir -p "$WALL_DIR"
 cp -r Walls/* "$WALL_DIR/"
+betterlockscreen -u /home/$USER/Images/Walls/DarkOcean.png
 
 echo "Assets instalados correctamente."

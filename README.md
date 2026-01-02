@@ -126,7 +126,7 @@ arch-chroot /mnt
 ```bash
 ln -sf /usr/share/zoneinfo/America/Phoenix /etc/localtime
 hwclock --systohc
-pacman -S nvim
+pacman -S neovim
 ```
 
 Editar locales en /etc/locale.gen:
@@ -168,7 +168,6 @@ passwd
 ```bash
 pacman -S grub efibootmgr os-prober
 grub-install /dev/<DISCO_RAIZ>
-pacman -S os-prober
 ```
 
 Editar grub para habilitar otros sistemas en /etc/default/grub:
@@ -221,3 +220,6 @@ cd arch-config
 ## Notas finales
 - Al inicio de sddm, debes cambiar de Qtile(Wayland) a Qtile
 - Puedes cambiar el orden de los sistemas en **/boot/grub/grub.cfg**
+- Termina de agregar los iconos con **lxappearance**
+- Cambia el tema de **rofi** con **rofi-theme-selector** a **rounded-nord-dark**
+- Instala el tema del grub agregando al archivo **/boot/grub/grub.cfg** la siguiente linea: GRUB_THEME_LINE='GRUB_THEME="/boot/grub/themes/minegrub-world-selection/theme.txt"'

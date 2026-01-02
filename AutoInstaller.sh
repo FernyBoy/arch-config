@@ -140,27 +140,6 @@ run_module "XProfile" "XProfileInstaller.sh" "Configurando XProfile"
 
 
 
-# ----------------------------------------------------------
-# Configuración del tema de GRUB
-# ----------------------------------------------------------
-echo
-echo "=================================================="
-echo ">> Configurando GRUB"
-echo "=================================================="
-
-GRUB_THEME_LINE='GRUB_THEME="/boot/grub/themes/minegrub-world-selection/theme.txt"'
-
-if grep -q '^GRUB_THEME=' /etc/default/grub; then
-    sed -i "s|^GRUB_THEME=.*|$GRUB_THEME_LINE|" /etc/default/grub
-else
-    echo "$GRUB_THEME_LINE" >> /etc/default/grub
-fi
-
-echo ">> Regenerando configuración de GRUB"
-grub-mkconfig -o /boot/grub/grub.cfg
-
-
-
 echo
 echo "=================================================="
 echo ">> Instalación finalizada"
