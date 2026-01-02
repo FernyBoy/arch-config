@@ -222,4 +222,4 @@ cd arch-config
 - Puedes cambiar el orden de los sistemas en **/boot/grub/grub.cfg**
 - Termina de agregar los iconos con **lxappearance**
 - Cambia el tema de **rofi** con **rofi-theme-selector** a **rounded-nord-dark**
-- Instala el tema del grub agregando al archivo **/boot/grub/grub.cfg** la siguiente linea: GRUB_THEME_LINE='GRUB_THEME="/boot/grub/themes/minegrub-world-selection/theme.txt"'
+- Instala el tema del grub agregando al archivo **/etc/default/grub** la siguiente linea: GRUB_THEME="/boot/grub/themes/minegrub-world-selection/theme.txt"
