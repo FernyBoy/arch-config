@@ -209,10 +209,11 @@ shutdown now
 ## Fase 2: Configuración automatizada del entorno
 
 ```bash
+sudo pacman -S git
 git clone https://github.com/FernyBoy/arch-config.git
 cd arch-config
 ./YayInstaller/yayInstaller.sh
-sudo ./AutoInstaller.sh
+./AutoInstaller.sh
 ```
 
 ---

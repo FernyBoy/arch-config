@@ -33,9 +33,6 @@ FONT_DIR="/usr/share/fonts/custom"
 sudo mkdir -p "$FONT_DIR"
 sudo cp -r Fonts/* "$FONT_DIR/"
 
-echo "Actualizando caché de fuentes..."
-sudo fc-cache -fv
-
 # ---------- Wallpapers ----------
 echo "Instalando wallpapers..."
 WALL_DIR="$HOME/Images/Walls"

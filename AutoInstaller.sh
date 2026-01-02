@@ -40,6 +40,18 @@ run_module()
 
 
 # ----------------------------------------------------------
+# Paquetes base y servicios
+# ----------------------------------------------------------
+run_module "ProgramsList" "ProgramsInstaller.sh" "Instalando programas base y AUR"
+
+echo
+echo "Habilitando servicios del sistema"
+sudo systemctl enable sddm
+sudo systemctl --user enable --now pipewire.service pipewire.socket wireplumber.service
+
+
+
+# ----------------------------------------------------------
 # Terminal
 # ----------------------------------------------------------
 run_module "Alacritty" "AlacrittyInstaller.sh" "Instalando terminal (Alacritty)"
@@ -85,18 +97,6 @@ run_module "Mirrors" "MirrorsInstaller.sh" "Configurando mirrors de pacman"
 # Compositor
 # ----------------------------------------------------------
 run_module "Picom" "PicomInstaller.sh" "Instalando y configurando Picom"
-
-
-
-# ----------------------------------------------------------
-# Paquetes base y servicios
-# ----------------------------------------------------------
-run_module "ProgramsList" "ProgramsInstaller.sh" "Instalando programas base y AUR"
-
-echo
-echo "Habilitando servicios del sistema"
-sudo systemctl enable sddm
-sudo systemctl --user enable --now pipewire.service pipewire.socket wireplumber.service
 
 
 
