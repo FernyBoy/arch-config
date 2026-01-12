@@ -31,6 +31,9 @@ mingw-w64-gcc
 neovim
 network-manager-applet
 networkmanager
+nvidia-open
+nvidia-settings
+nvidia-utils
 openssh
 os-prober
 pavucontrol
