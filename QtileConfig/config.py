@@ -30,6 +30,8 @@ from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
+import subprocess
+
 mod = "mod4"
 terminal = guess_terminal()
 
@@ -273,8 +275,6 @@ screens = [
                 widget.WindowName(
                     fontsize=15,
                 ),
-                # widget.StatusNotifier(),
-                widget.Systray(),
                 widget.Clock(
                     fontsize=14,
                     background=['#202020', '#202020'],
