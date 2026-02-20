@@ -211,6 +211,21 @@ screens = [
                 ),
                 # widget.StatusNotifier(),
                 widget.Systray(),
+
+                widget.TextBox(text=" ", fontsize=15),
+                widget.CPU(format="{load_percent}%"),
+
+                widget.TextBox(text=" ", fontsize=15),
+                widget.Memory(format="{MemUsed:.0f}{mm}"),
+
+                widget.TextBox(text="󰢮 ", fontsize=15),
+                widget.GenPollText(
+                    func=lambda: subprocess.check_output(
+                        ["nvidia-smi", "--query-gpu=utilization.gpu", "--format=csv,noheader,nounits"]
+                        ).decode("utf-8").strip() + "%",
+                    update_interval=1,
+                ),
+
                 widget.Clock(
                     fontsize=14,
                     background=['#202020', '#202020'],
