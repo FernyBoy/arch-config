@@ -1,7 +1,7 @@
 feh --bg-scale Images/Walls/DarkWaves.png &
 easyeffects --gapplication-service &
 picom & 
-volumeicon &
+pa-applet &
 pulseaudio &
 nm-applet &
 cbatticon &

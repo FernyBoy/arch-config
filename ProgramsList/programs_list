@@ -36,6 +36,7 @@ nvidia-settings
 nvidia-utils
 openssh
 os-prober
+pa-applet-git
 pavucontrol
 picom
 pipewire
@@ -63,7 +64,6 @@ unzip
 vim
 visual-studio-code-bin
 viewnior
-volumeicon
 wget
 wireplumber
 xclip
