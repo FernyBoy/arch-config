@@ -8,3 +8,5 @@ alias Gemini="npx https://github.com/google-gemini/gemini-cli"
 alias Ciclo="cd /home/$USER/Repos/TareasUnison/2025-2"
 Templates="/home/$USER/Repos/TareasUnison/Templates"
 alias Unison="cd ~/Repos/TareasUnison"
+
+alias FixCachyMirrors="sudo rm -rf /etc/pacman.d/gnupg; sudo pacman-key --init; sudo pacman-key --populate archlinux; sudo pacman-key --populate cachyos"

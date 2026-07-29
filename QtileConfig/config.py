@@ -78,9 +78,9 @@ keys = [
     Key([mod], "e", lazy.spawn("thunar")),
 
     # Microsoft edge dev
-    Key([mod], "b", lazy.spawn("microsoft-edge-stable")),
-    Key([mod, "control"], "b", lazy.spawn("microsofta-edge-stable --new-window")),
-    Key([mod, "shift"], "b", lazy.spawn("microsoft-edge-stable --inprivate")),
+    Key([mod], "b", lazy.spawn("firefox")),
+    Key([mod, "control"], "b", lazy.spawn("firefox --new-window")),
+    Key([mod, "shift"], "b", lazy.spawn("firefox --private-window")),
 
     # VsCode
     Key([mod], "v", lazy.spawn("code")),
@@ -102,13 +102,13 @@ keys = [
     Key([mod, "shift"], "a", lazy.spawn("pavucontrol")),
     
     # WhatsApp
-    Key([mod, "shift"], "w", lazy.spawn("microsoft-edge-stable --new-window https://web.whatsapp.com/")),
+    Key([mod, "shift"], "w", lazy.spawn("firefox --new-window https://web.whatsapp.com/")),
 
     # Spotify
-    Key([mod], "s", lazy.spawn("microsoft-edge-stable --new-window https://open.spotify.com/")),
+    Key([mod], "s", lazy.spawn("firefox --new-window https://open.spotify.com/")),
 
     # YouTube
-    Key([mod], "y", lazy.spawn("microsoft-edge-stable --new-window https://www.youtube.com/")),
+    Key([mod], "y", lazy.spawn("firefox --new-window https://www.youtube.com/")),
     
     # Discord
     Key([mod], "d", lazy.spawn("discord")),

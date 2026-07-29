@@ -47,7 +47,7 @@ run_module "ProgramsList" "ProgramsInstaller.sh" "Instalando programas base y AU
 echo
 echo "Habilitando servicios del sistema"
 sudo systemctl enable sddm
-sudo systemctl --user enable --now pipewire.service pipewire.socket wireplumber.service
+#sudo systemctl --user enable --now pipewire.service pipewire.socket wireplumber.service
 
 
 
@@ -89,7 +89,7 @@ run_module "EasyEffects-Presets" "install.sh" "Configurando audio y presets de E
 # ----------------------------------------------------------
 # Mirrors
 # ----------------------------------------------------------
-run_module "Mirrors" "MirrorsInstaller.sh" "Configurando mirrors de pacman"
+# run_module "Mirrors" "MirrorsInstaller.sh" "Configurando mirrors de pacman"
 
 
 
