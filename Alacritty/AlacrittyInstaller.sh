@@ -1,2 +1,2 @@
-mkdir -p /home/$USER/.config/alacritty
-cp alacritty.toml /home/$USER/.config/alacritty/
+mkdir -p $HOME/.config/alacritty
+cp alacritty.toml $HOME/.config/alacritty/

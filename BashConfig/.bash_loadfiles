@@ -3,7 +3,7 @@
 
 # --------------- Files loader --------------- #
 
-for file in "$HOME/.config/Bash"/.bash_*; do
+for file in "$HOME/.config/bash"/.bash_*; do
     [ -f "$file" ] && source "$file"
 done
 

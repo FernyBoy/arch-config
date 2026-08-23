@@ -1,2 +1,2 @@
-mkdir -p /home/$USER/.config/picom
-cp picom.conf /home/$USER/.config/picom
+mkdir -p $HOME/.config/picom
+cp picom.conf $HOME/.config/picom

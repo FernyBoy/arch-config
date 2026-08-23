@@ -129,7 +129,7 @@ echo "=================================================="
 echo ">> Instalando configuración de Neovim"
 echo "=================================================="
 
-git clone https://github.com/FernyBoy/nvim-config.git /home/$USER/.config/nvim
+git clone https://github.com/FernyBoy/nvim-config.git $HOME/.config/nvim
 
 
 
