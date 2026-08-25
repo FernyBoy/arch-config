@@ -1,5 +1,56 @@
 # Pacman
-alias Install="sudo pacman -S"
+unalias Install 2>/dev/null
+Install() {
+    if command -v fzf &>/dev/null; then
+        local selected
+        selected=$(pacman -Sl | fzf --multi \
+            --header="[TAB] Seleccionar múltiples | [ENTER] Instalar | [ESC] Salir" \
+            --preview="pacman -Si {2}" \
+            --preview-window="right:60%:wrap" \
+            --query="$*" | awk '{print $2}')
+        
+        if [ -n "$selected" ]; then
+            sudo pacman -S $selected
+        fi
+        printf '\e[?1000l\e[?1002l\e[?1003l\e[?1006l\e[?1049l\e[?1l\e>' 2>/dev/null
+    else
+        local query="$*"
+        if [ -z "$query" ]; then
+            read -rp "Buscar paquete para instalar: " query
+            [ -z "$query" ] && return 0
+        fi
+
+        mapfile -t pkgs < <(pacman -Sl | awk '{print $2}' | grep -i "$query")
+        if [ ${#pkgs[@]} -eq 0 ]; then
+            echo "No se encontraron paquetes para: $query"
+            return 1
+        fi
+
+        echo "Paquetes disponibles:"
+        local i=1
+        for pkg in "${pkgs[@]}"; do
+            echo "  $i) $pkg"
+            ((i++))
+            [ $i -gt 40 ] && { echo "  ... (mostrando los primeros 40 resultados)"; break; }
+        done
+
+        read -rp "Selecciona el número (o varios separados por espacio): " choices
+        [ -z "$choices" ] && return 0
+
+        local to_install=()
+        for c in $choices; do
+            if [[ "$c" =~ ^[0-9]+$ ]] && [ "$c" -ge 1 ] && [ "$c" -le ${#pkgs[@]} ]; then
+                to_install+=("${pkgs[$((c-1))]}")
+            fi
+        done
+
+        if [ ${#to_install[@]} -gt 0 ]; then
+            sudo pacman -S "${to_install[@]}"
+        else
+            echo "Selección no válida."
+        fi
+    fi
+}
 
 alias Uninstall="sudo pacman -Rns"
 

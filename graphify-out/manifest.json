@@ -1,0 +1,698 @@
+{
+  "Alacritty/AlacrittyInstaller.sh": {
+    "mtime": 1785346175.3025146,
+    "seen": 1787474638.282713,
+    "ast_hash": "0881a10eb073c1ed0e9e0d24e3b3218b",
+    "semantic_hash": "0881a10eb073c1ed0e9e0d24e3b3218b"
+  },
+  "AutoInstaller.sh": {
+    "mtime": 1785349089.6142657,
+    "seen": 1787474638.2827165,
+    "ast_hash": "9c53427229b6b00d66f462632f0889b7",
+    "semantic_hash": "9c53427229b6b00d66f462632f0889b7"
+  },
+  "Autokey/AutokeyInstaller.sh": {
+    "mtime": 1785346175.4216554,
+    "seen": 1787474638.2827182,
+    "ast_hash": "3e432e85c2e84964f538d5d1f489491e",
+    "semantic_hash": "3e432e85c2e84964f538d5d1f489491e"
+  },
+  "Autokey/Tildes/1/-Tilde.json": {
+    "mtime": 1785346175.4232092,
+    "seen": 1787474638.2827191,
+    "ast_hash": "6aac734e989626a76c28d413035b7b12",
+    "semantic_hash": "6aac734e989626a76c28d413035b7b12"
+  },
+  "Autokey/Tildes/1/-Tilde.py": {
+    "mtime": 1785346175.4232588,
+    "seen": 1787474638.2827203,
+    "ast_hash": "32812b31ac87d4a58a95429695f6aecd",
+    "semantic_hash": "32812b31ac87d4a58a95429695f6aecd"
+  },
+  "Autokey/Tildes/1/-Tilde1.json": {
+    "mtime": 1785346175.4232588,
+    "seen": 1787474638.282721,
+    "ast_hash": "1845ab87f6e96d785a2fcc51fae739a2",
+    "semantic_hash": "1845ab87f6e96d785a2fcc51fae739a2"
+  },
+  "Autokey/Tildes/1/-Tilde1.py": {
+    "mtime": 1785346175.4232588,
+    "seen": 1787474638.2827222,
+    "ast_hash": "455b4303dfbe570c4bdb9d3f4f099198",
+    "semantic_hash": "455b4303dfbe570c4bdb9d3f4f099198"
+  },
+  "Autokey/Tildes/1/folder.json": {
+    "mtime": 1785346175.4232588,
+    "seen": 1787474638.2827232,
+    "ast_hash": "89f6c8117448dfc9a791033289e2805a",
+    "semantic_hash": "89f6c8117448dfc9a791033289e2805a"
+  },
+  "Autokey/Tildes/Aa/A-Tilde.json": {
+    "mtime": 1785346175.4232588,
+    "seen": 1787474638.2827241,
+    "ast_hash": "d09dd5437af8651f181fae9bbee549d8",
+    "semantic_hash": "d09dd5437af8651f181fae9bbee549d8"
+  },
+  "Autokey/Tildes/Aa/A-Tilde.py": {
+    "mtime": 1785346175.4233654,
+    "seen": 1787474638.282725,
+    "ast_hash": "836dcac0a5e004f982ab2136bc1f3c63",
+    "semantic_hash": "836dcac0a5e004f982ab2136bc1f3c63"
+  },
+  "Autokey/Tildes/Aa/a-Tilde.json": {
+    "mtime": 1785346175.4233654,
+    "seen": 1787474638.282726,
+    "ast_hash": "bf6f216f4b6adbe09e8509a329a3b260",
+    "semantic_hash": "bf6f216f4b6adbe09e8509a329a3b260"
+  },
+  "Autokey/Tildes/Aa/a-Tilde.py": {
+    "mtime": 1785346175.4233654,
+    "seen": 1787474638.2827272,
+    "ast_hash": "aa1b454fff57f2dbf53f63c754a677aa",
+    "semantic_hash": "aa1b454fff57f2dbf53f63c754a677aa"
+  },
+  "Autokey/Tildes/Aa/folder.json": {
+    "mtime": 1785346175.4233654,
+    "seen": 1787474638.2827282,
+    "ast_hash": "a57ce4a5246df9005b2bdff0041ca30f",
+    "semantic_hash": "a57ce4a5246df9005b2bdff0041ca30f"
+  },
+  "Autokey/Tildes/Ee/E-Tilde.json": {
+    "mtime": 1785346175.4233654,
+    "seen": 1787474638.282729,
+    "ast_hash": "31672c96e5472a378c0e19e25329031c",
+    "semantic_hash": "31672c96e5472a378c0e19e25329031c"
+  },
+  "Autokey/Tildes/Ee/E-Tilde.py": {
+    "mtime": 1785346175.4234614,
+    "seen": 1787474638.2827296,
+    "ast_hash": "5f2af79875ae4e80b5dcf7d7dbd4e2ca",
+    "semantic_hash": "5f2af79875ae4e80b5dcf7d7dbd4e2ca"
+  },
+  "Autokey/Tildes/Ee/e-Tilde.json": {
+    "mtime": 1785346175.4234614,
+    "seen": 1787474638.2827306,
+    "ast_hash": "9a36d71083f262a0fb02f1e9d85c3f7c",
+    "semantic_hash": "9a36d71083f262a0fb02f1e9d85c3f7c"
+  },
+  "Autokey/Tildes/Ee/e-Tilde.py": {
+    "mtime": 1785346175.4234614,
+    "seen": 1787474638.2827313,
+    "ast_hash": "00474cbe6d9089bce84050bc17d73ba1",
+    "semantic_hash": "00474cbe6d9089bce84050bc17d73ba1"
+  },
+  "Autokey/Tildes/Ee/folder.json": {
+    "mtime": 1785346175.4234614,
+    "seen": 1787474638.282732,
+    "ast_hash": "12179945ced05ff8341c3ca4b669befa",
+    "semantic_hash": "12179945ced05ff8341c3ca4b669befa"
+  },
+  "Autokey/Tildes/Ii/I-Tilde.json": {
+    "mtime": 1785346175.4234614,
+    "seen": 1787474638.282733,
+    "ast_hash": "77a4d9c0eb8ad0b1d26bcf9cde146519",
+    "semantic_hash": "77a4d9c0eb8ad0b1d26bcf9cde146519"
+  },
+  "Autokey/Tildes/Ii/I-Tilde.py": {
+    "mtime": 1785346175.4235628,
+    "seen": 1787474638.282734,
+    "ast_hash": "ad70b2f64f36bbdb37bfe450de032957",
+    "semantic_hash": "ad70b2f64f36bbdb37bfe450de032957"
+  },
+  "Autokey/Tildes/Ii/folder.json": {
+    "mtime": 1785346175.4235628,
+    "seen": 1787474638.2827346,
+    "ast_hash": "67233075b5e19abd6f1747a017fc48ec",
+    "semantic_hash": "67233075b5e19abd6f1747a017fc48ec"
+  },
+  "Autokey/Tildes/Ii/i-Tilde.json": {
+    "mtime": 1785346175.4235628,
+    "seen": 1787474638.2827353,
+    "ast_hash": "9f0efcb63d0adaf315f674f1cfdc9553",
+    "semantic_hash": "9f0efcb63d0adaf315f674f1cfdc9553"
+  },
+  "Autokey/Tildes/Ii/i-Tilde.py": {
+    "mtime": 1785346175.4235628,
+    "seen": 1787474638.2827365,
+    "ast_hash": "80a4fb40967e3199a7f5ab32aca7930d",
+    "semantic_hash": "80a4fb40967e3199a7f5ab32aca7930d"
+  },
+  "Autokey/Tildes/Nn/N-Tilde.json": {
+    "mtime": 1785346175.4235628,
+    "seen": 1787474638.2827375,
+    "ast_hash": "2174c357a61858e2a7995b882192f5a9",
+    "semantic_hash": "2174c357a61858e2a7995b882192f5a9"
+  },
+  "Autokey/Tildes/Nn/N-Tilde.py": {
+    "mtime": 1785346175.4236934,
+    "seen": 1787474638.2827382,
+    "ast_hash": "cf381ffe4dec3ffbd54c6a702b37183b",
+    "semantic_hash": "cf381ffe4dec3ffbd54c6a702b37183b"
+  },
+  "Autokey/Tildes/Nn/folder.json": {
+    "mtime": 1785346175.4236934,
+    "seen": 1787474638.282739,
+    "ast_hash": "4fa637151332ea27ff2557d44bc6dc39",
+    "semantic_hash": "4fa637151332ea27ff2557d44bc6dc39"
+  },
+  "Autokey/Tildes/Nn/n-Tilde.json": {
+    "mtime": 1785346175.4236934,
+    "seen": 1787474638.2827399,
+    "ast_hash": "ee8efa2672c468af01cecb095677fd1f",
+    "semantic_hash": "ee8efa2672c468af01cecb095677fd1f"
+  },
+  "Autokey/Tildes/Nn/n-Tilde.py": {
+    "mtime": 1785346175.4236934,
+    "seen": 1787474638.2827408,
+    "ast_hash": "1a3d682111db8236c4ab30ae035ad614",
+    "semantic_hash": "1a3d682111db8236c4ab30ae035ad614"
+  },
+  "Autokey/Tildes/Oo/O-Tilde.json": {
+    "mtime": 1785346175.4236934,
+    "seen": 1787474638.2827415,
+    "ast_hash": "d7a25cb5caffb2453f0dffec96d9e3ac",
+    "semantic_hash": "d7a25cb5caffb2453f0dffec96d9e3ac"
+  },
+  "Autokey/Tildes/Oo/O-Tilde.py": {
+    "mtime": 1785346175.4238112,
+    "seen": 1787474638.2827425,
+    "ast_hash": "08af24833d1d6f42cf1f29a2f05f5209",
+    "semantic_hash": "08af24833d1d6f42cf1f29a2f05f5209"
+  },
+  "Autokey/Tildes/Oo/folder.json": {
+    "mtime": 1785346175.4238112,
+    "seen": 1787474638.2827432,
+    "ast_hash": "4781df252050296de802ab4043cfa9da",
+    "semantic_hash": "4781df252050296de802ab4043cfa9da"
+  },
+  "Autokey/Tildes/Oo/o-Tilde.json": {
+    "mtime": 1785346175.4238112,
+    "seen": 1787474638.2827442,
+    "ast_hash": "bb0dbe24e563db9452c31264d5b967b3",
+    "semantic_hash": "bb0dbe24e563db9452c31264d5b967b3"
+  },
+  "Autokey/Tildes/Oo/o-Tilde.py": {
+    "mtime": 1785346175.4238112,
+    "seen": 1787474638.282745,
+    "ast_hash": "c15670c7adb59ff4c0e6bbc69840d5ab",
+    "semantic_hash": "c15670c7adb59ff4c0e6bbc69840d5ab"
+  },
+  "Autokey/Tildes/Uu/U-Tilde.json": {
+    "mtime": 1785346175.4238112,
+    "seen": 1787474638.2827456,
+    "ast_hash": "d2f133d8cccdc121b2801fbfe498acab",
+    "semantic_hash": "d2f133d8cccdc121b2801fbfe498acab"
+  },
+  "Autokey/Tildes/Uu/U-Tilde.py": {
+    "mtime": 1785346175.4239073,
+    "seen": 1787474638.2827463,
+    "ast_hash": "ae2aa8be5ec9ded37e2b07dd1f3d564d",
+    "semantic_hash": "ae2aa8be5ec9ded37e2b07dd1f3d564d"
+  },
+  "Autokey/Tildes/Uu/folder.json": {
+    "mtime": 1785346175.4239073,
+    "seen": 1787474638.282747,
+    "ast_hash": "7d6463dc3663c4745943f8e5704a9b7d",
+    "semantic_hash": "7d6463dc3663c4745943f8e5704a9b7d"
+  },
+  "Autokey/Tildes/Uu/u-Tilde.json": {
+    "mtime": 1785346175.4239073,
+    "seen": 1787474638.282748,
+    "ast_hash": "5353df01648aa90a6457f8c96dbf5b55",
+    "semantic_hash": "5353df01648aa90a6457f8c96dbf5b55"
+  },
+  "Autokey/Tildes/Uu/u-Tilde.py": {
+    "mtime": 1785346175.4239073,
+    "seen": 1787474638.2827487,
+    "ast_hash": "88747260d70c869fbc87aa5b1c5096c1",
+    "semantic_hash": "88747260d70c869fbc87aa5b1c5096c1"
+  },
+  "Autokey/Tildes/folder.json": {
+    "mtime": 1785346175.4239073,
+    "seen": 1787474638.2827492,
+    "ast_hash": "2b4fde80d6a7c1cf5f85a148c5fd9de1",
+    "semantic_hash": "2b4fde80d6a7c1cf5f85a148c5fd9de1"
+  },
+  "Autokey/autokey/autokey.json": {
+    "mtime": 1785346175.4239073,
+    "seen": 1787474638.28275,
+    "ast_hash": "1514581af20b50e0cecc2dbe77fa620d",
+    "semantic_hash": "1514581af20b50e0cecc2dbe77fa620d"
+  },
+  "Autokey/autokey/data/My Phrases/1/-Tilde.json": {
+    "mtime": 1785346175.4240541,
+    "seen": 1787474638.2827506,
+    "ast_hash": "6aac734e989626a76c28d413035b7b12",
+    "semantic_hash": "6aac734e989626a76c28d413035b7b12"
+  },
+  "Autokey/autokey/data/My Phrases/1/-Tilde.py": {
+    "mtime": 1785346175.4241004,
+    "seen": 1787474638.2827518,
+    "ast_hash": "32812b31ac87d4a58a95429695f6aecd",
+    "semantic_hash": "32812b31ac87d4a58a95429695f6aecd"
+  },
+  "Autokey/autokey/data/My Phrases/1/-Tilde2.json": {
+    "mtime": 1785346175.4241004,
+    "seen": 1787474638.2827525,
+    "ast_hash": "a130074c7c6759ab2fbb12057772ee88",
+    "semantic_hash": "a130074c7c6759ab2fbb12057772ee88"
+  },
+  "Autokey/autokey/data/My Phrases/1/-Tilde2.py": {
+    "mtime": 1785346175.4241004,
+    "seen": 1787474638.2827537,
+    "ast_hash": "32812b31ac87d4a58a95429695f6aecd",
+    "semantic_hash": "32812b31ac87d4a58a95429695f6aecd"
+  },
+  "Autokey/autokey/data/My Phrases/1/Dot.json": {
+    "mtime": 1785346175.4241004,
+    "seen": 1787474638.2827547,
+    "ast_hash": "53b7f8f0b8c7861f8d689d9e10d3b526",
+    "semantic_hash": "53b7f8f0b8c7861f8d689d9e10d3b526"
+  },
+  "Autokey/autokey/data/My Phrases/1/Dot.py": {
+    "mtime": 1785346175.4241004,
+    "seen": 1787474638.2827554,
+    "ast_hash": "cb2d1cfd118ef2433b4be990a082fc6f",
+    "semantic_hash": "cb2d1cfd118ef2433b4be990a082fc6f"
+  },
+  "Autokey/autokey/data/My Phrases/1/folder.json": {
+    "mtime": 1785346175.4241004,
+    "seen": 1787474638.282756,
+    "ast_hash": "89f6c8117448dfc9a791033289e2805a",
+    "semantic_hash": "89f6c8117448dfc9a791033289e2805a"
+  },
+  "Autokey/autokey/data/My Phrases/Aa/A-Tilde.json": {
+    "mtime": 1785346175.4241004,
+    "seen": 1787474638.2827568,
+    "ast_hash": "d09dd5437af8651f181fae9bbee549d8",
+    "semantic_hash": "d09dd5437af8651f181fae9bbee549d8"
+  },
+  "Autokey/autokey/data/My Phrases/Aa/A-Tilde.py": {
+    "mtime": 1785346175.4242332,
+    "seen": 1787474638.2827575,
+    "ast_hash": "836dcac0a5e004f982ab2136bc1f3c63",
+    "semantic_hash": "836dcac0a5e004f982ab2136bc1f3c63"
+  },
+  "Autokey/autokey/data/My Phrases/Aa/a-Tilde.json": {
+    "mtime": 1785346175.4242332,
+    "seen": 1787474638.2827585,
+    "ast_hash": "bf6f216f4b6adbe09e8509a329a3b260",
+    "semantic_hash": "bf6f216f4b6adbe09e8509a329a3b260"
+  },
+  "Autokey/autokey/data/My Phrases/Aa/a-Tilde.py": {
+    "mtime": 1785346175.4242332,
+    "seen": 1787474638.2827592,
+    "ast_hash": "aa1b454fff57f2dbf53f63c754a677aa",
+    "semantic_hash": "aa1b454fff57f2dbf53f63c754a677aa"
+  },
+  "Autokey/autokey/data/My Phrases/Aa/folder.json": {
+    "mtime": 1785346175.4242332,
+    "seen": 1787474638.28276,
+    "ast_hash": "a57ce4a5246df9005b2bdff0041ca30f",
+    "semantic_hash": "a57ce4a5246df9005b2bdff0041ca30f"
+  },
+  "Autokey/autokey/data/My Phrases/Ee/E-Tilde.json": {
+    "mtime": 1785346175.4242332,
+    "seen": 1787474638.2827604,
+    "ast_hash": "31672c96e5472a378c0e19e25329031c",
+    "semantic_hash": "31672c96e5472a378c0e19e25329031c"
+  },
+  "Autokey/autokey/data/My Phrases/Ee/E-Tilde.py": {
+    "mtime": 1785346175.4243362,
+    "seen": 1787474638.282761,
+    "ast_hash": "5f2af79875ae4e80b5dcf7d7dbd4e2ca",
+    "semantic_hash": "5f2af79875ae4e80b5dcf7d7dbd4e2ca"
+  },
+  "Autokey/autokey/data/My Phrases/Ee/e-Tilde.json": {
+    "mtime": 1785346175.4243362,
+    "seen": 1787474638.282762,
+    "ast_hash": "9a36d71083f262a0fb02f1e9d85c3f7c",
+    "semantic_hash": "9a36d71083f262a0fb02f1e9d85c3f7c"
+  },
+  "Autokey/autokey/data/My Phrases/Ee/e-Tilde.py": {
+    "mtime": 1785346175.4243362,
+    "seen": 1787474638.282763,
+    "ast_hash": "00474cbe6d9089bce84050bc17d73ba1",
+    "semantic_hash": "00474cbe6d9089bce84050bc17d73ba1"
+  },
+  "Autokey/autokey/data/My Phrases/Ee/folder.json": {
+    "mtime": 1785346175.4243362,
+    "seen": 1787474638.2827635,
+    "ast_hash": "12179945ced05ff8341c3ca4b669befa",
+    "semantic_hash": "12179945ced05ff8341c3ca4b669befa"
+  },
+  "Autokey/autokey/data/My Phrases/Ii/I-Tilde.json": {
+    "mtime": 1785346175.4243362,
+    "seen": 1787474638.2827644,
+    "ast_hash": "77a4d9c0eb8ad0b1d26bcf9cde146519",
+    "semantic_hash": "77a4d9c0eb8ad0b1d26bcf9cde146519"
+  },
+  "Autokey/autokey/data/My Phrases/Ii/I-Tilde.py": {
+    "mtime": 1785346175.424436,
+    "seen": 1787474638.2827654,
+    "ast_hash": "ad70b2f64f36bbdb37bfe450de032957",
+    "semantic_hash": "ad70b2f64f36bbdb37bfe450de032957"
+  },
+  "Autokey/autokey/data/My Phrases/Ii/folder.json": {
+    "mtime": 1785346175.424436,
+    "seen": 1787474638.2827659,
+    "ast_hash": "67233075b5e19abd6f1747a017fc48ec",
+    "semantic_hash": "67233075b5e19abd6f1747a017fc48ec"
+  },
+  "Autokey/autokey/data/My Phrases/Ii/i-Tilde.json": {
+    "mtime": 1785346175.424436,
+    "seen": 1787474638.2827666,
+    "ast_hash": "9f0efcb63d0adaf315f674f1cfdc9553",
+    "semantic_hash": "9f0efcb63d0adaf315f674f1cfdc9553"
+  },
+  "Autokey/autokey/data/My Phrases/Ii/i-Tilde.py": {
+    "mtime": 1785346175.424436,
+    "seen": 1787474638.282767,
+    "ast_hash": "80a4fb40967e3199a7f5ab32aca7930d",
+    "semantic_hash": "80a4fb40967e3199a7f5ab32aca7930d"
+  },
+  "Autokey/autokey/data/My Phrases/Nn/N-Tilde.json": {
+    "mtime": 1785346175.424436,
+    "seen": 1787474638.2827678,
+    "ast_hash": "2174c357a61858e2a7995b882192f5a9",
+    "semantic_hash": "2174c357a61858e2a7995b882192f5a9"
+  },
+  "Autokey/autokey/data/My Phrases/Nn/N-Tilde.py": {
+    "mtime": 1785346175.4245346,
+    "seen": 1787474638.282769,
+    "ast_hash": "cf381ffe4dec3ffbd54c6a702b37183b",
+    "semantic_hash": "cf381ffe4dec3ffbd54c6a702b37183b"
+  },
+  "Autokey/autokey/data/My Phrases/Nn/folder.json": {
+    "mtime": 1785346175.4245346,
+    "seen": 1787474638.2827694,
+    "ast_hash": "4fa637151332ea27ff2557d44bc6dc39",
+    "semantic_hash": "4fa637151332ea27ff2557d44bc6dc39"
+  },
+  "Autokey/autokey/data/My Phrases/Nn/n-Tilde.json": {
+    "mtime": 1785346175.4245346,
+    "seen": 1787474638.2827702,
+    "ast_hash": "ee8efa2672c468af01cecb095677fd1f",
+    "semantic_hash": "ee8efa2672c468af01cecb095677fd1f"
+  },
+  "Autokey/autokey/data/My Phrases/Nn/n-Tilde.py": {
+    "mtime": 1785346175.4245346,
+    "seen": 1787474638.2827706,
+    "ast_hash": "1a3d682111db8236c4ab30ae035ad614",
+    "semantic_hash": "1a3d682111db8236c4ab30ae035ad614"
+  },
+  "Autokey/autokey/data/My Phrases/Oo/O-Tilde.json": {
+    "mtime": 1785346175.4245346,
+    "seen": 1787474638.2827713,
+    "ast_hash": "d7a25cb5caffb2453f0dffec96d9e3ac",
+    "semantic_hash": "d7a25cb5caffb2453f0dffec96d9e3ac"
+  },
+  "Autokey/autokey/data/My Phrases/Oo/O-Tilde.py": {
+    "mtime": 1785346175.424641,
+    "seen": 1787474638.2827723,
+    "ast_hash": "08af24833d1d6f42cf1f29a2f05f5209",
+    "semantic_hash": "08af24833d1d6f42cf1f29a2f05f5209"
+  },
+  "Autokey/autokey/data/My Phrases/Oo/folder.json": {
+    "mtime": 1785346175.424641,
+    "seen": 1787474638.282773,
+    "ast_hash": "4781df252050296de802ab4043cfa9da",
+    "semantic_hash": "4781df252050296de802ab4043cfa9da"
+  },
+  "Autokey/autokey/data/My Phrases/Oo/o-Tilde.json": {
+    "mtime": 1785346175.424641,
+    "seen": 1787474638.2827737,
+    "ast_hash": "bb0dbe24e563db9452c31264d5b967b3",
+    "semantic_hash": "bb0dbe24e563db9452c31264d5b967b3"
+  },
+  "Autokey/autokey/data/My Phrases/Oo/o-Tilde.py": {
+    "mtime": 1785346175.424641,
+    "seen": 1787474638.2827744,
+    "ast_hash": "c15670c7adb59ff4c0e6bbc69840d5ab",
+    "semantic_hash": "c15670c7adb59ff4c0e6bbc69840d5ab"
+  },
+  "Autokey/autokey/data/My Phrases/Uu/U-Tilde.json": {
+    "mtime": 1785346175.424641,
+    "seen": 1787474638.2827754,
+    "ast_hash": "d2f133d8cccdc121b2801fbfe498acab",
+    "semantic_hash": "d2f133d8cccdc121b2801fbfe498acab"
+  },
+  "Autokey/autokey/data/My Phrases/Uu/U-Tilde.py": {
+    "mtime": 1785346175.4247496,
+    "seen": 1787474638.282776,
+    "ast_hash": "ae2aa8be5ec9ded37e2b07dd1f3d564d",
+    "semantic_hash": "ae2aa8be5ec9ded37e2b07dd1f3d564d"
+  },
+  "Autokey/autokey/data/My Phrases/Uu/folder.json": {
+    "mtime": 1785346175.4247496,
+    "seen": 1787474638.2827768,
+    "ast_hash": "7d6463dc3663c4745943f8e5704a9b7d",
+    "semantic_hash": "7d6463dc3663c4745943f8e5704a9b7d"
+  },
+  "Autokey/autokey/data/My Phrases/Uu/u-Tilde.json": {
+    "mtime": 1785346175.4247496,
+    "seen": 1787474638.2827775,
+    "ast_hash": "5353df01648aa90a6457f8c96dbf5b55",
+    "semantic_hash": "5353df01648aa90a6457f8c96dbf5b55"
+  },
+  "Autokey/autokey/data/My Phrases/Uu/u-Tilde.py": {
+    "mtime": 1785346175.4247496,
+    "seen": 1787474638.282778,
+    "ast_hash": "88747260d70c869fbc87aa5b1c5096c1",
+    "semantic_hash": "88747260d70c869fbc87aa5b1c5096c1"
+  },
+  "Autokey/autokey/data/My Phrases/folder.json": {
+    "mtime": 1785346175.4247496,
+    "seen": 1787474638.282779,
+    "ast_hash": "2b4fde80d6a7c1cf5f85a148c5fd9de1",
+    "semantic_hash": "2b4fde80d6a7c1cf5f85a148c5fd9de1"
+  },
+  "Autokey/autokey/data/Sample Scripts/Abbreviation from selection.json": {
+    "mtime": 1785346175.4247496,
+    "seen": 1787474638.2827797,
+    "ast_hash": "6890c71b5bade3abe00a6a7cea944b80",
+    "semantic_hash": "6890c71b5bade3abe00a6a7cea944b80"
+  },
+  "Autokey/autokey/data/Sample Scripts/Abbreviation from selection.py": {
+    "mtime": 1785346175.4248724,
+    "seen": 1787474638.2827804,
+    "ast_hash": "21805135000eb77ff470098e75b96bc6",
+    "semantic_hash": "21805135000eb77ff470098e75b96bc6"
+  },
+  "Autokey/autokey/data/Sample Scripts/Display window info.json": {
+    "mtime": 1785346175.4248724,
+    "seen": 1787474638.2827811,
+    "ast_hash": "5dd0a8cc7c9aa6ab489ed3833503261b",
+    "semantic_hash": "5dd0a8cc7c9aa6ab489ed3833503261b"
+  },
+  "Autokey/autokey/data/Sample Scripts/Display window info.py": {
+    "mtime": 1785346175.4248724,
+    "seen": 1787474638.2827818,
+    "ast_hash": "0abb6f54fc1f47d0a50466475f4838a6",
+    "semantic_hash": "0abb6f54fc1f47d0a50466475f4838a6"
+  },
+  "Autokey/autokey/data/Sample Scripts/Insert Date.json": {
+    "mtime": 1785346175.4248724,
+    "seen": 1787474638.2827826,
+    "ast_hash": "953739e0f550c430f2c0baca6530dc1c",
+    "semantic_hash": "953739e0f550c430f2c0baca6530dc1c"
+  },
+  "Autokey/autokey/data/Sample Scripts/Insert Date.py": {
+    "mtime": 1785346175.4248724,
+    "seen": 1787474638.2827833,
+    "ast_hash": "5b027a6718e362dd99b2e0a06a00d603",
+    "semantic_hash": "5b027a6718e362dd99b2e0a06a00d603"
+  },
+  "Autokey/autokey/data/Sample Scripts/List Menu.json": {
+    "mtime": 1785346175.4248724,
+    "seen": 1787474638.282784,
+    "ast_hash": "5de282d05a03c45b01ef479a432ef89e",
+    "semantic_hash": "5de282d05a03c45b01ef479a432ef89e"
+  },
+  "Autokey/autokey/data/Sample Scripts/List Menu.py": {
+    "mtime": 1785346175.4248724,
+    "seen": 1787474638.2827847,
+    "ast_hash": "8c56717220a783f5ba2e76701c122d12",
+    "semantic_hash": "8c56717220a783f5ba2e76701c122d12"
+  },
+  "Autokey/autokey/data/Sample Scripts/Phrase from selection.json": {
+    "mtime": 1785346175.4248724,
+    "seen": 1787474638.2827866,
+    "ast_hash": "3d07d90a8166ff38ae822299d37b3423",
+    "semantic_hash": "3d07d90a8166ff38ae822299d37b3423"
+  },
+  "Autokey/autokey/data/Sample Scripts/Phrase from selection.py": {
+    "mtime": 1785346175.4248724,
+    "seen": 1787474638.2827873,
+    "ast_hash": "ecd8d5531bc961c9b9709b5e83a31dae",
+    "semantic_hash": "ecd8d5531bc961c9b9709b5e83a31dae"
+  },
+  "Autokey/autokey/data/Sample Scripts/Selection Test.json": {
+    "mtime": 1785346175.4248724,
+    "seen": 1787474638.282788,
+    "ast_hash": "b07c122a2c7dfa1f485184f855f48ca5",
+    "semantic_hash": "b07c122a2c7dfa1f485184f855f48ca5"
+  },
+  "Autokey/autokey/data/Sample Scripts/Selection Test.py": {
+    "mtime": 1785346175.4248724,
+    "seen": 1787474638.2827888,
+    "ast_hash": "94b7857418428f724440c4188bac090e",
+    "semantic_hash": "94b7857418428f724440c4188bac090e"
+  },
+  "Autokey/autokey/data/Sample Scripts/folder.json": {
+    "mtime": 1785346175.4248724,
+    "seen": 1787474638.2827897,
+    "ast_hash": "0ab28f80f0fee4eab7ee7cdcd54ed823",
+    "semantic_hash": "0ab28f80f0fee4eab7ee7cdcd54ed823"
+  },
+  "BashConfig/BashInstaller.sh": {
+    "mtime": 1785346175.4254978,
+    "seen": 1787474638.2827904,
+    "ast_hash": "11529f94b28c2d4e618e58cc15d8a3cd",
+    "semantic_hash": "11529f94b28c2d4e618e58cc15d8a3cd"
+  },
+  "EasyEffects-Presets/Advanced Auto Gain.json": {
+    "mtime": 1785346175.4256248,
+    "seen": 1787474638.282791,
+    "ast_hash": "0e6889261f2fdf3293fff8a298745393",
+    "semantic_hash": "0e6889261f2fdf3293fff8a298745393"
+  },
+  "EasyEffects-Presets/Bass Boosted.json": {
+    "mtime": 1785346175.4258435,
+    "seen": 1787474638.2827916,
+    "ast_hash": "bedb1db6acba915e8aa5c10cfea4d3c5",
+    "semantic_hash": "bedb1db6acba915e8aa5c10cfea4d3c5"
+  },
+  "EasyEffects-Presets/Bass Enhancing + Perfect EQ.json": {
+    "mtime": 1785346175.4258435,
+    "seen": 1787474638.2827923,
+    "ast_hash": "ebc555ff55d9077e04662a8696fe5afe",
+    "semantic_hash": "ebc555ff55d9077e04662a8696fe5afe"
+  },
+  "EasyEffects-Presets/Boosted.json": {
+    "mtime": 1785346175.4258435,
+    "seen": 1787474638.2827933,
+    "ast_hash": "884e7efd3a96087acac7e7073b713a1a",
+    "semantic_hash": "884e7efd3a96087acac7e7073b713a1a"
+  },
+  "EasyEffects-Presets/Loudness+Autogain.json": {
+    "mtime": 1785346175.4258435,
+    "seen": 1787474638.2827938,
+    "ast_hash": "a21f142cac56dd36b9ca09f82ec20a36",
+    "semantic_hash": "a21f142cac56dd36b9ca09f82ec20a36"
+  },
+  "EasyEffects-Presets/Perfect EQ.json": {
+    "mtime": 1785346175.4258435,
+    "seen": 1787474638.2827945,
+    "ast_hash": "aedb0d0d1548db613525c804a5675f8f",
+    "semantic_hash": "aedb0d0d1548db613525c804a5675f8f"
+  },
+  "EasyEffects-Presets/install.sh": {
+    "mtime": 1785346175.4258435,
+    "seen": 1787474638.282795,
+    "ast_hash": "90f098b44c62fb244ed58cef84aa9b75",
+    "semantic_hash": "90f098b44c62fb244ed58cef84aa9b75"
+  },
+  "Mirrors/MirrorsInstaller.sh": {
+    "mtime": 1785346175.4276626,
+    "seen": 1787474638.2827957,
+    "ast_hash": "a1641b72755c2db185a754fcef6aa498",
+    "semantic_hash": "a1641b72755c2db185a754fcef6aa498"
+  },
+  "Picom/PicomInstaller.sh": {
+    "mtime": 1785346175.4288766,
+    "seen": 1787474638.2827966,
+    "ast_hash": "5379d475bbe1036e9ae7b21281c20a41",
+    "semantic_hash": "5379d475bbe1036e9ae7b21281c20a41"
+  },
+  "ProgramsList/ProgramsInstaller.sh": {
+    "mtime": 1785346175.428938,
+    "seen": 1787474638.2827976,
+    "ast_hash": "a5f3f3539cc6fd121af58f71623b1d14",
+    "semantic_hash": "a5f3f3539cc6fd121af58f71623b1d14"
+  },
+  "QtileConfig/QtileInstaller.sh": {
+    "mtime": 1785346175.4289966,
+    "seen": 1787474638.282798,
+    "ast_hash": "d965016e3af588abda15dc0eae8ff630",
+    "semantic_hash": "d965016e3af588abda15dc0eae8ff630"
+  },
+  "QtileConfig/config.py": {
+    "mtime": 1785350394.7982097,
+    "seen": 1787474638.2827988,
+    "ast_hash": "9d8c46bf18a17d0ec265af20bd04874b",
+    "semantic_hash": "9d8c46bf18a17d0ec265af20bd04874b"
+  },
+  "Rofi/RofiThemeInstaller.sh": {
+    "mtime": 1785346175.4290535,
+    "seen": 1787474638.2827992,
+    "ast_hash": "2fbf22a260cac2c4a25b93a0ca678bad",
+    "semantic_hash": "2fbf22a260cac2c4a25b93a0ca678bad"
+  },
+  "SDDM/InstallSddmTheme.sh": {
+    "mtime": 1785346175.4291735,
+    "seen": 1787474638.2828002,
+    "ast_hash": "8750a3008b9d784a646b0ccbdaa129a2",
+    "semantic_hash": "8750a3008b9d784a646b0ccbdaa129a2"
+  },
+  "XProfile/XProfileInstaller.sh": {
+    "mtime": 1785346175.4393823,
+    "seen": 1787474638.282801,
+    "ast_hash": "e9e4b94dd73a79ec5bc957fcfd6f80a6",
+    "semantic_hash": "e9e4b94dd73a79ec5bc957fcfd6f80a6"
+  },
+  "YayInstaller/yayInstaller.sh": {
+    "mtime": 1785346175.4393823,
+    "seen": 1787474638.2828016,
+    "ast_hash": "f537bacdeb454fce2970f62b1dfcb2d9",
+    "semantic_hash": "f537bacdeb454fce2970f62b1dfcb2d9"
+  },
+  "pyproject.toml": {
+    "mtime": 1787474236.1799603,
+    "seen": 1787474638.2828023,
+    "ast_hash": "33cea10a1dac8ecd56743e98409fc02c",
+    "semantic_hash": "33cea10a1dac8ecd56743e98409fc02c"
+  },
+  "src/arch_config/__init__.py": {
+    "mtime": 1787474236.1799603,
+    "seen": 1787474638.2828033,
+    "ast_hash": "43d6926facc6661020b1c205841e5673",
+    "semantic_hash": "43d6926facc6661020b1c205841e5673"
+  },
+  ".agents/rules/graphify.md": {
+    "mtime": 1787474441.3176353,
+    "seen": 1787474638.282804,
+    "ast_hash": "f1e53ecc9194573d3c28fc116c743a2e",
+    "semantic_hash": "f1e53ecc9194573d3c28fc116c743a2e"
+  },
+  "EasyEffects-Presets/README.md": {
+    "mtime": 1785346175.4258435,
+    "seen": 1787474638.2828047,
+    "ast_hash": "fddfdfb28dde13f0b7c7cc7e3568bdaa",
+    "semantic_hash": "fddfdfb28dde13f0b7c7cc7e3568bdaa"
+  },
+  "README.md": {
+    "mtime": 1785346175.4290535,
+    "seen": 1787474638.2828052,
+    "ast_hash": "09b32ec2b7390230bb6654ba97ee324c",
+    "semantic_hash": "09b32ec2b7390230bb6654ba97ee324c"
+  },
+  "SDDM/sugar-dark/README.md": {
+    "mtime": 1785346175.4376745,
+    "seen": 1787474638.282806,
+    "ast_hash": "88a07459a303ddb1d3e7d65a8f6c16e7",
+    "semantic_hash": "88a07459a303ddb1d3e7d65a8f6c16e7"
+  },
+  "SDDM/sugar-dark/Background.jpg": {
+    "mtime": 1785346175.4293253,
+    "seen": 1787474638.2828069,
+    "ast_hash": "4127d12e0b937cea361ebfc294012290",
+    "semantic_hash": "4127d12e0b937cea361ebfc294012290"
+  },
+  "SDDM/sugar-dark/Illustration.svg": {
+    "mtime": 1785346175.4297276,
+    "seen": 1787474638.2828114,
+    "ast_hash": "af5639b79f7e80be090be026bb4bd35c",
+    "semantic_hash": "af5639b79f7e80be090be026bb4bd35c"
+  }
+}

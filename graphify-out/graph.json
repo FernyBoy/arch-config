@@ -1,0 +1,1410 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "src_arch_config_init_main",
+      "label": "main()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "Arch Config Core Init",
+      "file_type": "code",
+      "norm_label": "main()",
+      "source_file": "src/arch_config/__init__.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "easyeffects_presets_install",
+      "label": "install.sh",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "EasyEffects Audio Presets",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "install.sh",
+      "source_file": "EasyEffects-Presets/install.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "easyeffects_presets_install_check_impulse_response_directory",
+      "label": "check_impulse_response_directory()",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "EasyEffects Audio Presets",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "check_impulse_response_directory()",
+      "source_file": "EasyEffects-Presets/install.sh",
+      "source_location": "L18"
+    },
+    {
+      "id": "easyeffects_presets_install_check_installation",
+      "label": "check_installation()",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "EasyEffects Audio Presets",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "check_installation()",
+      "source_file": "EasyEffects-Presets/install.sh",
+      "source_location": "L6"
+    },
+    {
+      "id": "easyeffects_presets_install_install_menu",
+      "label": "install_menu()",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "EasyEffects Audio Presets",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "install_menu()",
+      "source_file": "EasyEffects-Presets/install.sh",
+      "source_location": "L40"
+    },
+    {
+      "id": "easyeffects_presets_install_install_presets",
+      "label": "install_presets()",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "EasyEffects Audio Presets",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "install_presets()",
+      "source_file": "EasyEffects-Presets/install.sh",
+      "source_location": "L50"
+    },
+    {
+      "id": "easyeffects_presets_install_read_choice",
+      "label": "read_choice()",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "EasyEffects Audio Presets",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "read_choice()",
+      "source_file": "EasyEffects-Presets/install.sh",
+      "source_location": "L27"
+    },
+    {
+      "id": "easyeffects_presets_install_sh__entry",
+      "label": "install.sh script",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "EasyEffects Audio Presets",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "install.sh script",
+      "source_file": "EasyEffects-Presets/install.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "programslist_programsinstaller",
+      "label": "ProgramsInstaller.sh",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Program Packages Installer",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "programsinstaller.sh",
+      "source_file": "ProgramsList/ProgramsInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "programslist_programsinstaller_draw_progress",
+      "label": "draw_progress()",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Program Packages Installer",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "draw_progress()",
+      "source_file": "ProgramsList/ProgramsInstaller.sh",
+      "source_location": "L68"
+    },
+    {
+      "id": "programslist_programsinstaller_failed_packages_log",
+      "label": "FAILED_PACKAGES_LOG",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Program Packages Installer",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "norm_label": "failed_packages_log",
+      "source_file": "ProgramsList/ProgramsInstaller.sh",
+      "source_location": "L11"
+    },
+    {
+      "id": "programslist_programsinstaller_input_file",
+      "label": "INPUT_FILE",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Program Packages Installer",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "code"
+      },
+      "norm_label": "input_file",
+      "source_file": "ProgramsList/ProgramsInstaller.sh",
+      "source_location": "L10"
+    },
+    {
+      "id": "programslist_programsinstaller_sh__entry",
+      "label": "ProgramsInstaller.sh script",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "Program Packages Installer",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "programsinstaller.sh script",
+      "source_file": "ProgramsList/ProgramsInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "rofi_rofithemeinstaller",
+      "label": "RofiThemeInstaller.sh",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "Rofi Theme Setup",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "rofithemeinstaller.sh",
+      "source_file": "Rofi/RofiThemeInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "rofi_rofithemeinstaller_sh__entry",
+      "label": "RofiThemeInstaller.sh script",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "Rofi Theme Setup",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "rofithemeinstaller.sh script",
+      "source_file": "Rofi/RofiThemeInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "sddm_installsddmtheme",
+      "label": "InstallSddmTheme.sh",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "SDDM Display Manager Setup",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "installsddmtheme.sh",
+      "source_file": "SDDM/InstallSddmTheme.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "sddm_installsddmtheme_sh__entry",
+      "label": "InstallSddmTheme.sh script",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "SDDM Display Manager Setup",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "installsddmtheme.sh script",
+      "source_file": "SDDM/InstallSddmTheme.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "src_arch_config_init",
+      "label": "__init__.py",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "Arch Config Core Init",
+      "file_type": "code",
+      "norm_label": "__init__.py",
+      "source_file": "src/arch_config/__init__.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "xprofile_xprofileinstaller",
+      "label": "XProfileInstaller.sh",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Rofi Theme Setup",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "xprofileinstaller.sh",
+      "source_file": "XProfile/XProfileInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "xprofile_xprofileinstaller_sh__entry",
+      "label": "XProfileInstaller.sh script",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "Rofi Theme Setup",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "xprofileinstaller.sh script",
+      "source_file": "XProfile/XProfileInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "yayinstaller_yayinstaller",
+      "label": "yayInstaller.sh",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "Yay AUR Helper Installer",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "yayinstaller.sh",
+      "source_file": "YayInstaller/yayInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "yayinstaller_yayinstaller_sh__entry",
+      "label": "yayInstaller.sh script",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "Yay AUR Helper Installer",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "yayinstaller.sh script",
+      "source_file": "YayInstaller/yayInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_my_phrases_1_dot",
+      "label": "Dot.py",
+      "_origin": "ast",
+      "community": 17,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "dot.py",
+      "source_file": "Autokey/autokey/data/My Phrases/1/Dot.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_my_phrases_1_tilde",
+      "label": "My Phrases/1/-Tilde.py",
+      "_origin": "ast",
+      "community": 18,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "my phrases/1/-tilde.py",
+      "source_file": "Autokey/autokey/data/My Phrases/1/-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_my_phrases_1_tilde2",
+      "label": "-Tilde2.py",
+      "_origin": "ast",
+      "community": 19,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "-tilde2.py",
+      "source_file": "Autokey/autokey/data/My Phrases/1/-Tilde2.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autoinstaller",
+      "label": "AutoInstaller.sh",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "AutoInstaller Orchestration",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "autoinstaller.sh",
+      "source_file": "AutoInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "autoinstaller_run_module",
+      "label": "run_module()",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "AutoInstaller Orchestration",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_function"
+      },
+      "norm_label": "run_module()",
+      "source_file": "AutoInstaller.sh",
+      "source_location": "L24"
+    },
+    {
+      "id": "autoinstaller_sh__entry",
+      "label": "AutoInstaller.sh script",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "AutoInstaller Orchestration",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "autoinstaller.sh script",
+      "source_file": "AutoInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_my_phrases_aa_a_tilde_py_autokey_autokey_data_my_phrases_aa_a_tilde_0ad0d7",
+      "label": "My Phrases/Aa/a-Tilde.py",
+      "_origin": "ast",
+      "community": 20,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "my phrases/aa/a-tilde.py",
+      "source_file": "Autokey/autokey/data/My Phrases/Aa/a-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_my_phrases_aa_a_tilde_py_autokey_autokey_data_my_phrases_aa_a_tilde_fccbba",
+      "label": "My Phrases/Aa/A-Tilde.py",
+      "_origin": "ast",
+      "community": 21,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "my phrases/aa/a-tilde.py",
+      "source_file": "Autokey/autokey/data/My Phrases/Aa/A-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_my_phrases_ee_e_tilde_py_autokey_autokey_data_my_phrases_ee_e_tilde_68cf79",
+      "label": "My Phrases/Ee/E-Tilde.py",
+      "_origin": "ast",
+      "community": 22,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "my phrases/ee/e-tilde.py",
+      "source_file": "Autokey/autokey/data/My Phrases/Ee/E-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_my_phrases_ee_e_tilde_py_autokey_autokey_data_my_phrases_ee_e_tilde_f03e32",
+      "label": "My Phrases/Ee/e-Tilde.py",
+      "_origin": "ast",
+      "community": 23,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "my phrases/ee/e-tilde.py",
+      "source_file": "Autokey/autokey/data/My Phrases/Ee/e-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_my_phrases_ii_i_tilde_py_autokey_autokey_data_my_phrases_ii_i_tilde_636536",
+      "label": "My Phrases/Ii/I-Tilde.py",
+      "_origin": "ast",
+      "community": 24,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "my phrases/ii/i-tilde.py",
+      "source_file": "Autokey/autokey/data/My Phrases/Ii/I-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_my_phrases_ii_i_tilde_py_autokey_autokey_data_my_phrases_ii_i_tilde_907513",
+      "label": "My Phrases/Ii/i-Tilde.py",
+      "_origin": "ast",
+      "community": 25,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "my phrases/ii/i-tilde.py",
+      "source_file": "Autokey/autokey/data/My Phrases/Ii/i-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_my_phrases_nn_n_tilde_py_autokey_autokey_data_my_phrases_nn_n_tilde_2264ee",
+      "label": "My Phrases/Nn/N-Tilde.py",
+      "_origin": "ast",
+      "community": 26,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "my phrases/nn/n-tilde.py",
+      "source_file": "Autokey/autokey/data/My Phrases/Nn/N-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_my_phrases_nn_n_tilde_py_autokey_autokey_data_my_phrases_nn_n_tilde_452163",
+      "label": "My Phrases/Nn/n-Tilde.py",
+      "_origin": "ast",
+      "community": 27,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "my phrases/nn/n-tilde.py",
+      "source_file": "Autokey/autokey/data/My Phrases/Nn/n-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_my_phrases_oo_o_tilde_py_autokey_autokey_data_my_phrases_oo_o_tilde_e6997d",
+      "label": "My Phrases/Oo/o-Tilde.py",
+      "_origin": "ast",
+      "community": 28,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "my phrases/oo/o-tilde.py",
+      "source_file": "Autokey/autokey/data/My Phrases/Oo/o-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_my_phrases_oo_o_tilde_py_autokey_autokey_data_my_phrases_oo_o_tilde_f2b5e9",
+      "label": "My Phrases/Oo/O-Tilde.py",
+      "_origin": "ast",
+      "community": 29,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "my phrases/oo/o-tilde.py",
+      "source_file": "Autokey/autokey/data/My Phrases/Oo/O-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_my_phrases_uu_u_tilde_py_autokey_autokey_data_my_phrases_uu_u_tilde_4115da",
+      "label": "My Phrases/Uu/U-Tilde.py",
+      "_origin": "ast",
+      "community": 30,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "my phrases/uu/u-tilde.py",
+      "source_file": "Autokey/autokey/data/My Phrases/Uu/U-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_my_phrases_uu_u_tilde_py_autokey_autokey_data_my_phrases_uu_u_tilde_4cf6c3",
+      "label": "My Phrases/Uu/u-Tilde.py",
+      "_origin": "ast",
+      "community": 31,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "my phrases/uu/u-tilde.py",
+      "source_file": "Autokey/autokey/data/My Phrases/Uu/u-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_sample_scripts_abbreviation_from_selection",
+      "label": "Abbreviation from selection.py",
+      "_origin": "ast",
+      "community": 32,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "abbreviation from selection.py",
+      "source_file": "Autokey/autokey/data/Sample Scripts/Abbreviation from selection.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_sample_scripts_display_window_info",
+      "label": "Display window info.py",
+      "_origin": "ast",
+      "community": 33,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "display window info.py",
+      "source_file": "Autokey/autokey/data/Sample Scripts/Display window info.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_sample_scripts_insert_date",
+      "label": "Insert Date.py",
+      "_origin": "ast",
+      "community": 34,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "insert date.py",
+      "source_file": "Autokey/autokey/data/Sample Scripts/Insert Date.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_sample_scripts_list_menu",
+      "label": "List Menu.py",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "list menu.py",
+      "source_file": "Autokey/autokey/data/Sample Scripts/List Menu.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_sample_scripts_phrase_from_selection",
+      "label": "Phrase from selection.py",
+      "_origin": "ast",
+      "community": 36,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "phrase from selection.py",
+      "source_file": "Autokey/autokey/data/Sample Scripts/Phrase from selection.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokey_data_sample_scripts_selection_test",
+      "label": "Selection Test.py",
+      "_origin": "ast",
+      "community": 37,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "selection test.py",
+      "source_file": "Autokey/autokey/data/Sample Scripts/Selection Test.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_tildes_1_tilde",
+      "label": "Tildes/1/-Tilde.py",
+      "_origin": "ast",
+      "community": 38,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "tildes/1/-tilde.py",
+      "source_file": "Autokey/Tildes/1/-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_tildes_1_tilde1",
+      "label": "-Tilde1.py",
+      "_origin": "ast",
+      "community": 39,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "-tilde1.py",
+      "source_file": "Autokey/Tildes/1/-Tilde1.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "alacritty_alacrittyinstaller",
+      "label": "AlacrittyInstaller.sh",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Alacritty Terminal Setup",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "alacrittyinstaller.sh",
+      "source_file": "Alacritty/AlacrittyInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "alacritty_alacrittyinstaller_sh__entry",
+      "label": "AlacrittyInstaller.sh script",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "Alacritty Terminal Setup",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "alacrittyinstaller.sh script",
+      "source_file": "Alacritty/AlacrittyInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_tildes_aa_a_tilde_py_autokey_tildes_aa_a_tilde_9f45cf",
+      "label": "Tildes/Aa/A-Tilde.py",
+      "_origin": "ast",
+      "community": 40,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "tildes/aa/a-tilde.py",
+      "source_file": "Autokey/Tildes/Aa/A-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_tildes_aa_a_tilde_py_autokey_tildes_aa_a_tilde_f41e14",
+      "label": "Tildes/Aa/a-Tilde.py",
+      "_origin": "ast",
+      "community": 41,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "tildes/aa/a-tilde.py",
+      "source_file": "Autokey/Tildes/Aa/a-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_tildes_ee_e_tilde_py_autokey_tildes_ee_e_tilde_bce1b2",
+      "label": "Tildes/Ee/E-Tilde.py",
+      "_origin": "ast",
+      "community": 42,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "tildes/ee/e-tilde.py",
+      "source_file": "Autokey/Tildes/Ee/E-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_tildes_ee_e_tilde_py_autokey_tildes_ee_e_tilde_e8dfe6",
+      "label": "Tildes/Ee/e-Tilde.py",
+      "_origin": "ast",
+      "community": 43,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "tildes/ee/e-tilde.py",
+      "source_file": "Autokey/Tildes/Ee/e-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_tildes_ii_i_tilde_py_autokey_tildes_ii_i_tilde_7922f6",
+      "label": "Tildes/Ii/i-Tilde.py",
+      "_origin": "ast",
+      "community": 44,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "tildes/ii/i-tilde.py",
+      "source_file": "Autokey/Tildes/Ii/i-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_tildes_ii_i_tilde_py_autokey_tildes_ii_i_tilde_d35651",
+      "label": "Tildes/Ii/I-Tilde.py",
+      "_origin": "ast",
+      "community": 45,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "tildes/ii/i-tilde.py",
+      "source_file": "Autokey/Tildes/Ii/I-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_tildes_nn_n_tilde_py_autokey_tildes_nn_n_tilde_80d919",
+      "label": "Tildes/Nn/n-Tilde.py",
+      "_origin": "ast",
+      "community": 46,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "tildes/nn/n-tilde.py",
+      "source_file": "Autokey/Tildes/Nn/n-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_tildes_nn_n_tilde_py_autokey_tildes_nn_n_tilde_df05ad",
+      "label": "Tildes/Nn/N-Tilde.py",
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "tildes/nn/n-tilde.py",
+      "source_file": "Autokey/Tildes/Nn/N-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_tildes_oo_o_tilde_py_autokey_tildes_oo_o_tilde_2f796c",
+      "label": "Tildes/Oo/o-Tilde.py",
+      "_origin": "ast",
+      "community": 48,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "tildes/oo/o-tilde.py",
+      "source_file": "Autokey/Tildes/Oo/o-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_tildes_oo_o_tilde_py_autokey_tildes_oo_o_tilde_d3d70f",
+      "label": "Tildes/Oo/O-Tilde.py",
+      "_origin": "ast",
+      "community": 49,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "tildes/oo/o-tilde.py",
+      "source_file": "Autokey/Tildes/Oo/O-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokeyinstaller",
+      "label": "AutokeyInstaller.sh",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "autokeyinstaller.sh",
+      "source_file": "Autokey/AutokeyInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_autokeyinstaller_sh__entry",
+      "label": "AutokeyInstaller.sh script",
+      "_origin": "ast",
+      "community": 5,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "autokeyinstaller.sh script",
+      "source_file": "Autokey/AutokeyInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_tildes_uu_u_tilde_py_autokey_tildes_uu_u_tilde_17c700",
+      "label": "Tildes/Uu/U-Tilde.py",
+      "_origin": "ast",
+      "community": 50,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "tildes/uu/u-tilde.py",
+      "source_file": "Autokey/Tildes/Uu/U-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "autokey_tildes_uu_u_tilde_py_autokey_tildes_uu_u_tilde_ee18d3",
+      "label": "Tildes/Uu/u-Tilde.py",
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "AutoKey Automation Scripts",
+      "file_type": "code",
+      "norm_label": "tildes/uu/u-tilde.py",
+      "source_file": "Autokey/Tildes/Uu/u-Tilde.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "pkg_arch_config",
+      "label": "arch-config",
+      "_origin": "ast",
+      "community": 53,
+      "community_name": "Pkg Arch Config",
+      "ecosystem": "python",
+      "file_type": "code",
+      "norm_label": "arch-config",
+      "source_file": "pyproject.toml",
+      "source_location": "L1",
+      "type": "package",
+      "version": "0.1.0"
+    },
+    {
+      "id": "qtileconfig_config",
+      "label": "config.py",
+      "_origin": "ast",
+      "community": 54,
+      "community_name": "Qtile Window Manager",
+      "file_type": "code",
+      "norm_label": "config.py",
+      "source_file": "QtileConfig/config.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "bashconfig_bashinstaller",
+      "label": "BashInstaller.sh",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "Bash Shell Configuration",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "bashinstaller.sh",
+      "source_file": "BashConfig/BashInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "bashconfig_bashinstaller_sh__entry",
+      "label": "BashInstaller.sh script",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "Bash Shell Configuration",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "bashinstaller.sh script",
+      "source_file": "BashConfig/BashInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "mirrors_mirrorsinstaller",
+      "label": "MirrorsInstaller.sh",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Pacman Mirrors Config",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "mirrorsinstaller.sh",
+      "source_file": "Mirrors/MirrorsInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "mirrors_mirrorsinstaller_sh__entry",
+      "label": "MirrorsInstaller.sh script",
+      "_origin": "ast",
+      "community": 7,
+      "community_name": "Pacman Mirrors Config",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "mirrorsinstaller.sh script",
+      "source_file": "Mirrors/MirrorsInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "picom_picominstaller",
+      "label": "PicomInstaller.sh",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "Picom Compositor Setup",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "picominstaller.sh",
+      "source_file": "Picom/PicomInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "picom_picominstaller_sh__entry",
+      "label": "PicomInstaller.sh script",
+      "_origin": "ast",
+      "community": 8,
+      "community_name": "Picom Compositor Setup",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "picominstaller.sh script",
+      "source_file": "Picom/PicomInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "qtileconfig_qtileinstaller",
+      "label": "QtileInstaller.sh",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "Qtile Window Manager",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "qtileinstaller.sh",
+      "source_file": "QtileConfig/QtileInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "qtileconfig_qtileinstaller_sh__entry",
+      "label": "QtileInstaller.sh script",
+      "_origin": "ast",
+      "community": 9,
+      "community_name": "Qtile Window Manager",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "qtileinstaller.sh script",
+      "source_file": "QtileConfig/QtileInstaller.sh",
+      "source_location": "L1"
+    },
+    {
+      "id": "readme_automated_environment_phase",
+      "label": "Automated Environment Configuration Phase",
+      "author": null,
+      "captured_at": null,
+      "community": 10,
+      "community_name": "Arch Setup Documentation",
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "automated environment configuration phase",
+      "source_file": "README.md",
+      "source_location": "L208-L216",
+      "source_url": null
+    },
+    {
+      "id": "readme_manual_installation_phase",
+      "label": "Arch Base Manual Installation Phase",
+      "author": null,
+      "captured_at": null,
+      "community": 10,
+      "community_name": "Arch Setup Documentation",
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "arch base manual installation phase",
+      "source_file": "README.md",
+      "source_location": "L43-L205",
+      "source_url": null
+    },
+    {
+      "id": "agents_rules_graphify_knowledge_graph_rule",
+      "label": "Graphify Knowledge Graph Rule",
+      "author": null,
+      "captured_at": null,
+      "community": 16,
+      "community_name": "Graphify Knowledge System",
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "graphify knowledge graph rule",
+      "source_file": ".agents/rules/graphify.md",
+      "source_location": "L1-L15",
+      "source_url": null
+    },
+    {
+      "id": "sddm_sugar_dark_readme_theme_setup",
+      "label": "SDDM Sugar Dark Theme Configuration",
+      "author": null,
+      "captured_at": null,
+      "community": 3,
+      "community_name": "SDDM Sugar Dark Theme",
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "sddm sugar dark theme configuration",
+      "source_file": "SDDM/sugar-dark/README.md",
+      "source_location": "L1-L50",
+      "source_url": null
+    },
+    {
+      "id": "sddm_sugar_dark_background_wallpaper",
+      "label": "SDDM Sugar Dark Background Wallpaper",
+      "author": null,
+      "captured_at": null,
+      "community": 3,
+      "community_name": "SDDM Sugar Dark Theme",
+      "contributor": null,
+      "file_type": "image",
+      "norm_label": "sddm sugar dark background wallpaper",
+      "source_file": "SDDM/sugar-dark/Background.jpg",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "sddm_sugar_dark_illustration_svg",
+      "label": "SDDM Sugar Dark Vector Illustration",
+      "author": null,
+      "captured_at": null,
+      "community": 3,
+      "community_name": "SDDM Sugar Dark Theme",
+      "contributor": null,
+      "file_type": "image",
+      "norm_label": "sddm sugar dark vector illustration",
+      "source_file": "SDDM/sugar-dark/Illustration.svg",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "easyeffects_presets_readme_preset_configuration",
+      "label": "EasyEffects Audio Presets Configuration",
+      "author": null,
+      "captured_at": null,
+      "community": 52,
+      "community_name": "EasyEffects Audio Presets",
+      "contributor": null,
+      "file_type": "document",
+      "norm_label": "easyeffects audio presets configuration",
+      "source_file": "EasyEffects-Presets/README.md",
+      "source_location": "L1-L20",
+      "source_url": null
+    }
+  ],
+  "links": [
+    {
+      "source": "autoinstaller_sh__entry",
+      "target": "autoinstaller_run_module",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "AutoInstaller.sh",
+      "source_location": "L45",
+      "weight": 1.0
+    },
+    {
+      "source": "easyeffects_presets_install_sh__entry",
+      "target": "easyeffects_presets_install_check_installation",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "EasyEffects-Presets/install.sh",
+      "source_location": "L115",
+      "weight": 1.0
+    },
+    {
+      "source": "easyeffects_presets_install_sh__entry",
+      "target": "easyeffects_presets_install_check_impulse_response_directory",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "EasyEffects-Presets/install.sh",
+      "source_location": "L116",
+      "weight": 1.0
+    },
+    {
+      "source": "easyeffects_presets_install_sh__entry",
+      "target": "easyeffects_presets_install_install_presets",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "EasyEffects-Presets/install.sh",
+      "source_location": "L120",
+      "weight": 1.0
+    },
+    {
+      "source": "programslist_programsinstaller_sh__entry",
+      "target": "programslist_programsinstaller_draw_progress",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "ProgramsList/ProgramsInstaller.sh",
+      "source_location": "L89",
+      "weight": 1.0
+    },
+    {
+      "source": "alacritty_alacrittyinstaller",
+      "target": "alacritty_alacrittyinstaller_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Alacritty/AlacrittyInstaller.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "autoinstaller",
+      "target": "autoinstaller_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AutoInstaller.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "autokey_autokeyinstaller",
+      "target": "autokey_autokeyinstaller_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Autokey/AutokeyInstaller.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "bashconfig_bashinstaller",
+      "target": "bashconfig_bashinstaller_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "BashConfig/BashInstaller.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "easyeffects_presets_install",
+      "target": "easyeffects_presets_install_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "EasyEffects-Presets/install.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "mirrors_mirrorsinstaller",
+      "target": "mirrors_mirrorsinstaller_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Mirrors/MirrorsInstaller.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "picom_picominstaller",
+      "target": "picom_picominstaller_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Picom/PicomInstaller.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "programslist_programsinstaller",
+      "target": "programslist_programsinstaller_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProgramsList/ProgramsInstaller.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "qtileconfig_qtileinstaller",
+      "target": "qtileconfig_qtileinstaller_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "QtileConfig/QtileInstaller.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "rofi_rofithemeinstaller",
+      "target": "rofi_rofithemeinstaller_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "Rofi/RofiThemeInstaller.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "sddm_installsddmtheme",
+      "target": "sddm_installsddmtheme_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SDDM/InstallSddmTheme.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "src_arch_config_init",
+      "target": "src_arch_config_init_main",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/arch_config/__init__.py",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "xprofile_xprofileinstaller",
+      "target": "xprofile_xprofileinstaller_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "XProfile/XProfileInstaller.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "yayinstaller_yayinstaller",
+      "target": "yayinstaller_yayinstaller_sh__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "YayInstaller/yayInstaller.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "autoinstaller",
+      "target": "autoinstaller_run_module",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "AutoInstaller.sh",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "easyeffects_presets_install",
+      "target": "easyeffects_presets_install_check_impulse_response_directory",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "EasyEffects-Presets/install.sh",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "easyeffects_presets_install",
+      "target": "easyeffects_presets_install_read_choice",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "EasyEffects-Presets/install.sh",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "easyeffects_presets_install",
+      "target": "easyeffects_presets_install_install_menu",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "EasyEffects-Presets/install.sh",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "easyeffects_presets_install",
+      "target": "easyeffects_presets_install_install_presets",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "EasyEffects-Presets/install.sh",
+      "source_location": "L50",
+      "weight": 1.0
+    },
+    {
+      "source": "easyeffects_presets_install",
+      "target": "easyeffects_presets_install_check_installation",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "EasyEffects-Presets/install.sh",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "programslist_programsinstaller",
+      "target": "programslist_programsinstaller_input_file",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProgramsList/ProgramsInstaller.sh",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "programslist_programsinstaller",
+      "target": "programslist_programsinstaller_failed_packages_log",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProgramsList/ProgramsInstaller.sh",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "programslist_programsinstaller",
+      "target": "programslist_programsinstaller_draw_progress",
+      "relation": "defines",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "ProgramsList/ProgramsInstaller.sh",
+      "source_location": "L68",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_automated_environment_phase",
+      "target": "readme_manual_installation_phase",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L33-L39",
+      "weight": 1.0
+    },
+    {
+      "source": "sddm_sugar_dark_readme_theme_setup",
+      "target": "sddm_sugar_dark_background_wallpaper",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SDDM/sugar-dark/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "sddm_sugar_dark_readme_theme_setup",
+      "target": "sddm_sugar_dark_illustration_svg",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "SDDM/sugar-dark/README.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "bfe690f5fd2627d5507f38e8eba715d0272a30a2"
+}

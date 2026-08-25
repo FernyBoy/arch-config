@@ -1,2 +1,2 @@
-mkdir -p /home/$USER/.config/qtile/
-cp *.py /home/$USER/.config/qtile/
+mkdir -p $HOME/.config/qtile/
+cp *.py $HOME/.config/qtile/

@@ -1,1 +1,1 @@
-cp .xprofile /home/$USER/
+cp .xprofile $HOME/
